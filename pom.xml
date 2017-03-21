@@ -5,8 +5,9 @@
 	<artifactId>INE5448</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+	
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
