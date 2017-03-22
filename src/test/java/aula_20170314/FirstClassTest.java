@@ -8,6 +8,7 @@ import org.joda.time.Interval;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalDateTime;
 import org.joda.time.LocalTime;
+import org.joda.time.Period;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -228,7 +229,25 @@ public class FirstClassTest {
 	 * Criação de períodos
 	 */
 
-	// TODO
+	@Test
+	public void periodoHora() throws Exception {
+		LocalTime inicio = new LocalTime(12, 00, 00);
+		LocalTime fim = new LocalTime(13, 30, 00);
+		Period periodo = new Period(inicio, fim);
+
+		assertEquals(1, periodo.getHours());
+		assertEquals(30, periodo.getMinutes());
+	}
+
+	@Test
+	public void periodoMes() throws Exception {
+		LocalDate inicio = new LocalDate(2017, 01, 01);
+		LocalDate fim = new LocalDate(2017, 02, 01);
+		Period periodo = new Period(inicio, fim);
+
+		assertEquals(1, periodo.getMonths());
+		assertEquals(0, periodo.getDays());
+	}
 
 	/*
 	 * Others...
