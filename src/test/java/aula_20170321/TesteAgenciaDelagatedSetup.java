@@ -52,8 +52,8 @@ public class TesteAgenciaDelagatedSetup {
 
 	private Conta novaContaComQuatroReaisDeSaldo() {
 		Conta mariaConta = this.novaConta();
-		Dinheiro dezReais = new Dinheiro(Moeda.BRL, 4, 0);
-		this.getSistemaBancario().depositar(mariaConta, dezReais);
+		Dinheiro quatroReais = new Dinheiro(Moeda.BRL, 4, 0);
+		this.getSistemaBancario().depositar(mariaConta, quatroReais);
 		return mariaConta;
 	}
 
