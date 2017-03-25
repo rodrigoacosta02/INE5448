@@ -14,7 +14,7 @@ import br.ufsc.ine.leb.sistemaBancario.Moeda;
 import br.ufsc.ine.leb.sistemaBancario.Operacao;
 import br.ufsc.ine.leb.sistemaBancario.SistemaBancario;
 
-public class TesteAgencia {
+public class TesteAgenciaInLineSetup {
 	private static final String BANCO_DO_BRASIL = "Banco do Brasil";
 	private static final String CENTRO = "Centro";
 	private static final String MARIA = "Maria";
