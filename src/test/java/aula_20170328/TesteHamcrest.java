@@ -52,7 +52,7 @@ public class TesteHamcrest {
 	/*
 	 * Exercício 2
 	 */
-	// TODO
+	// go to TesteAgenciaHamcrest.java
 
 	/*
 	 * Exercício 3
