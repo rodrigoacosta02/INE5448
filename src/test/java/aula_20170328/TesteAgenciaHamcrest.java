@@ -14,6 +14,11 @@ import br.ufsc.ine.leb.sistemaBancario.Moeda;
 import br.ufsc.ine.leb.sistemaBancario.Operacao;
 import br.ufsc.ine.leb.sistemaBancario.SistemaBancario;
 import static org.hamcrest.CoreMatchers.*;
+/*
+ * Exercício 2 -
+ * testes do sistema bancário utilizando os
+ * matchers do Hamcrest.
+ */
 
 public class TesteAgenciaHamcrest {
 

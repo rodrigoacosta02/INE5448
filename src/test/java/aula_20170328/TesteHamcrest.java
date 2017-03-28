@@ -9,11 +9,11 @@ import java.util.List;
 
 import org.junit.Test;
 
+/*
+ * Exercício 1
+ */
 public class TesteHamcrest {
 
-	/*
-	 * Exercício 1
-	 */
 	@Test
 	public void objectMatcherTest() throws Exception {
 		String a = new String();
@@ -49,13 +49,4 @@ public class TesteHamcrest {
 		assertThat(text, anyOf(startsWith("hello"), endsWith("world!!")));
 	}
 
-	/*
-	 * Exercício 2
-	 */
-	// go to TesteAgenciaHamcrest.java
-
-	/*
-	 * Exercício 3
-	 */
-	// TODO
 }
