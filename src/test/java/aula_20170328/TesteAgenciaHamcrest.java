@@ -15,9 +15,7 @@ import br.ufsc.ine.leb.sistemaBancario.Operacao;
 import br.ufsc.ine.leb.sistemaBancario.SistemaBancario;
 import static org.hamcrest.CoreMatchers.*;
 /*
- * Exercício 2 -
- * testes do sistema bancário utilizando os
- * matchers do Hamcrest.
+ * Exercício 2 - testes do sistema bancário utilizando os matchers do Hamcrest.
  */
 
 public class TesteAgenciaHamcrest {
@@ -67,48 +65,48 @@ public class TesteAgenciaHamcrest {
 	@Test
 	public void criacaoDeBanco() throws Exception {
 
-		assertThat(BANCO_DO_BRASIL, equalTo(this.bb.obterNome()));
-		assertThat(Moeda.BRL, equalTo(this.bb.obterMoeda()));
+		assertThat(this.bb.obterNome(), equalTo(BANCO_DO_BRASIL));
+		assertThat(this.bb.obterMoeda(), equalTo(Moeda.BRL));
 	}
 
 	@Test
 	public void criacaoAgencia() throws Exception {
 
-		assertThat("001", equalTo(this.bbCentro.obterIdentificador()));
-		assertThat(CENTRO, equalTo(this.bbCentro.obterNome()));
-		assertThat(BANCO_DO_BRASIL, equalTo(this.bbCentro.obterBanco().obterNome()));
+		assertThat(this.bbCentro.obterIdentificador(), equalTo("001"));
+		assertThat(this.bbCentro.obterNome(), equalTo(CENTRO));
+		assertThat(this.bbCentro.obterBanco().obterNome(), equalTo(BANCO_DO_BRASIL));
 	}
 
 	@Test
 	public void criacaoDeConta() throws Exception {
 
-		assertThat("0001-5", equalTo(this.mariaConta.obterIdentificador()));
-		assertThat(MARIA, equalTo(this.mariaConta.obterTitular()));
-		assertThat("0,00", equalTo(this.mariaConta.calcularSaldo().formatado()));
-		assertThat(CENTRO, equalTo(this.mariaConta.obterAgencia().obterNome()));
+		assertThat(this.mariaConta.obterIdentificador(), equalTo("0001-5"));
+		assertThat(this.mariaConta.obterTitular(), equalTo(MARIA));
+		assertThat(this.mariaConta.calcularSaldo().formatado(), equalTo("0,00"));
+		assertThat(this.mariaConta.obterAgencia().obterNome(), equalTo(CENTRO));
 	}
 
 	@Test
 	public void operacaoDeposito() throws Exception {
 
-		assertThat(EstadosDeOperacao.SUCESSO, equalTo(this.depositoDezReais.obterEstado()));
-		assertThat(this.dezReais.toString(),
-				equalTo(this.mariaContaDepositadoDezReais.calcularSaldo().formatarSemSinal()));
+		assertThat(this.depositoDezReais.obterEstado(), equalTo(EstadosDeOperacao.SUCESSO));
+		assertThat(this.mariaContaDepositadoDezReais.calcularSaldo().formatarSemSinal(),
+				equalTo(this.dezReais.toString()));
 	}
 
 	@Test
 	public void operacaoSaque() throws Exception {
 
-		assertThat(EstadosDeOperacao.SUCESSO, equalTo(this.saqueSeisReaisSaldoSuperior.obterEstado()));
-		assertThat(this.quatroReais.toString(),
-				equalTo(this.mariaContaSaldoDezReais.calcularSaldo().formatarSemSinal()));
+		assertThat(this.saqueSeisReaisSaldoSuperior.obterEstado(), equalTo(EstadosDeOperacao.SUCESSO));
+		assertThat(this.mariaContaSaldoDezReais.calcularSaldo().formatarSemSinal(),
+				equalTo(this.quatroReais.toString()));
 	}
 
 	@Test
 	public void operacaoSaqueInsuficiente() throws Exception {
 
-		assertThat(EstadosDeOperacao.SALDO_INSUFICIENTE, equalTo(this.saqueSeisReaisSaldoInferior.obterEstado()));
-		assertThat(this.quatroReais.toString(),
-				equalTo(this.mariaContaSaldoQuatroReais.calcularSaldo().formatarSemSinal()));
+		assertThat(this.saqueSeisReaisSaldoInferior.obterEstado(), equalTo(EstadosDeOperacao.SALDO_INSUFICIENTE));
+		assertThat(this.mariaContaSaldoQuatroReais.calcularSaldo().formatarSemSinal(),
+				equalTo(this.quatroReais.toString()));
 	}
 }
