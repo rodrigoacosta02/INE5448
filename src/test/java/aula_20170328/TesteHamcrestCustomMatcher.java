@@ -35,4 +35,14 @@ public class TesteHamcrestCustomMatcher {
 
 		assertThat(this.mariaConta, new CombinadorDeConta(IDENTIFICADOR, MARIA, BANCO_DO_BRASIL, CENTRO));
 	}
+
+	/*
+	 * Ver saída de Falha
+	 * Teste deve falhar
+	 */
+	@Test
+	public void failTest() throws Exception {
+
+		assertThat(this.mariaConta, new CombinadorDeConta(IDENTIFICADOR, MARIA, BANCO_DO_BRASIL, "Trindade"));
+	}
 }
