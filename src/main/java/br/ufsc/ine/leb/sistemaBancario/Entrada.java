@@ -8,12 +8,10 @@ public class Entrada implements Transacao {
 		this.quantia = quantia;
 	}
 
-	@Override
 	public ValorMonetario obterValorMonetario() {
 		return quantia.positivo();
 	}
 
-	@Override
 	public ValorMonetario contabilizar(ValorMonetario saldo) {
 		return saldo.somar(quantia);
 	}

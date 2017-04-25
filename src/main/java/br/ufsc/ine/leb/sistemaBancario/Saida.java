@@ -8,12 +8,10 @@ public class Saida implements Transacao {
 		this.quantia = quantia;
 	}
 
-	@Override
 	public ValorMonetario obterValorMonetario() {
 		return quantia.negativo();
 	}
 
-	@Override
 	public ValorMonetario contabilizar(ValorMonetario saldo) {
 		return saldo.subtrair(quantia);
 	}

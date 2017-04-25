@@ -6,7 +6,6 @@ public class ShufflePuzzleLevelEmpty implements StrategyShufflePuzzle {
 
 	}
 
-	@Override
 	public void shuffle(Puzzle game) {
 		// TODO Auto-generated method stub
 

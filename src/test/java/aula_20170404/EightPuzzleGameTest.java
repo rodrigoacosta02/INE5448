@@ -86,7 +86,7 @@ public class EightPuzzleGameTest {
 
 	@Test
 	public void putTilesInTheBoard() throws Exception {
-		List<Tile> list = new LinkedList<>();
+		List<Tile> list = new LinkedList<Tile>();
 		list.add(new Tile(10));
 		list.add(new Tile(11));
 		list.add(new Tile(12));

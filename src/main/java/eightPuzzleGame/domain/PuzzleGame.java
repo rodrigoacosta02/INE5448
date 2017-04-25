@@ -31,7 +31,7 @@ public class PuzzleGame implements Puzzle {
 	public PuzzleGame(int dimension, StrategyShufflePuzzle shuffler) {
 		this.boardWithFinalState = new SquareBoard(dimension);
 		this.board = new SquareBoard(dimension);
-		this.positionsOfTiles = new HashMap<>();
+		this.positionsOfTiles = new HashMap<Tile, Position>();
 
 		List<Tile> listOfTiles = this.generateListOfTiles(dimension * dimension - 1);
 
@@ -84,14 +84,13 @@ public class PuzzleGame implements Puzzle {
 	}
 
 	private List<Tile> generateListOfTiles(int quantityOfTiles) {
-		List<Tile> listOfTiles = new ArrayList<>();
+		List<Tile> listOfTiles = new ArrayList<Tile>();
 		for (int i = 1; i <= quantityOfTiles; i++) {
 			listOfTiles.add(new Tile(i));
 		}
 		return listOfTiles;
 	}
 
-	@Override
 	public void moveTile(int tileNumber) throws ExceptionInvalidPosition {
 		Position tilePosition = this.positionsOfTiles.get(new Tile(tileNumber));
 		if (tilePosition != null && this.board.isAdjacent(tilePosition, this.emptyCell)) {
@@ -102,7 +101,6 @@ public class PuzzleGame implements Puzzle {
 		}
 	}
 
-	@Override
 	public void moveTile(int line, int column) throws ExceptionInvalidPosition {
 		if (line > 0 && line <= this.board.getDimension() && column > 0 && column <= this.board.getDimension()) {
 			Position posicaoPeca = new Position(line, column);
@@ -116,7 +114,6 @@ public class PuzzleGame implements Puzzle {
 		}
 	}
 
-	@Override
 	public boolean moveEmptyCell(Direction direction) {
 		if (direction == Direction.UP) {
 			return this.moveUp();
@@ -194,7 +191,6 @@ public class PuzzleGame implements Puzzle {
 		}
 	}
 
-	@Override
 	public boolean endOfTheGame() {
 		return this.board.equals(this.boardWithFinalState);
 	}

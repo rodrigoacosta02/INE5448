@@ -8,12 +8,10 @@ public class TransacaoNaoRealizada implements Transacao {
 		this.transacao = transacao;
 	}
 
-	@Override
 	public ValorMonetario obterValorMonetario() {
 		return transacao.obterValorMonetario();
 	}
 
-	@Override
 	public ValorMonetario contabilizar(ValorMonetario saldo) {
 		return saldo;
 	}

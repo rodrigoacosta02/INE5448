@@ -18,7 +18,6 @@ public class CombinadorDeConta extends BaseMatcher<Conta> implements Matcher<Con
 		this.nomeDaAgencia = nomeDaAgencia;
 	}
 
-	@Override
 	public boolean matches(Object object) {
 		if (object != null && object instanceof Conta) {
 			Conta contaAux = (Conta) object;
@@ -30,7 +29,6 @@ public class CombinadorDeConta extends BaseMatcher<Conta> implements Matcher<Con
 		return false;
 	}
 
-	@Override
 	public void describeTo(Description description) {
 		description.appendText(" Conta ");
 		description.appendValue(this.identificadorDaConta);

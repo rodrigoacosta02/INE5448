@@ -15,7 +15,6 @@ public class CombinadorDePessoa extends BaseMatcher<Pessoa> implements Matcher<P
 		this.ocupacao = ocupacao;
 	}
 
-	@Override
 	public boolean matches(Object objeto) {
 		if (objeto != null && objeto instanceof Pessoa) {
 			Pessoa outra = (Pessoa) objeto;
@@ -25,7 +24,6 @@ public class CombinadorDePessoa extends BaseMatcher<Pessoa> implements Matcher<P
 		return false;
 	}
 
-	@Override
 	public void describeTo(Description descricao) {
 		descricao.appendValue(this.ocupacao);
 		descricao.appendText(" de nome ");
