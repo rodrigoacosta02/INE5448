@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/EightPuzzleGameTest.moveNullTest()V",
+  "modified_states": "0",
+  "covered_states": "0",
+  "useless_covered_states": "2",
+  "modified":  [  ],
+  "covered":  [  ],
+  "useless":  [ "domain/EightPuzzleGameTest.pg", "RIGHT" ],
+  "state_coverage": "0.0"
+}

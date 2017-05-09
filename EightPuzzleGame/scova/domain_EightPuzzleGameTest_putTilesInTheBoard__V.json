@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/EightPuzzleGameTest.putTilesInTheBoard()V",
+  "modified_states": "5",
+  "covered_states": "0",
+  "useless_covered_states": "2",
+  "modified":  [ "domain/Tile.hash", "domain/Position.column", "domain/Position.line", "domain/Tile.number", "domain/Cell.tile" ],
+  "covered":  [  ],
+  "useless":  [ "domain/EightPuzzleGameTest.pg", "domain/PuzzleGame.board" ],
+  "state_coverage": "0.0"
+}

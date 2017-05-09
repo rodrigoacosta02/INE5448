@@ -1,0 +1,77 @@
+AOIU_1:16:Tile(int):number => -number
+AOIU_2:17:Tile(int):this.number => -this.number
+AOIU_3:22:int_getNumber():this.number => -this.number
+AOIU_4:27:boolean_biggerThan(domain.Tile):this.number => -this.number
+AOIU_5:27:boolean_biggerThan(domain.Tile):otherTile.number => -otherTile.number
+AOIU_6:32:boolean_equals(java.lang.Object):this.number => -this.number
+AOIU_7:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => -((domain.Tile) tile).number
+AOIU_8:37:int_hashCode():hash => -hash
+AOIU_9:42:java.lang.String_toString():this.number => -this.number
+AOIS_1:16:Tile(int):number => ++number
+AOIS_2:16:Tile(int):number => --number
+AOIS_3:16:Tile(int):number => number++
+AOIS_4:16:Tile(int):number => number--
+AOIS_5:17:Tile(int):this.number => ++this.number
+AOIS_6:17:Tile(int):this.number => --this.number
+AOIS_7:17:Tile(int):this.number => this.number++
+AOIS_8:17:Tile(int):this.number => this.number--
+AOIS_9:22:int_getNumber():this.number => this.number++
+AOIS_10:22:int_getNumber():this.number => this.number--
+AOIS_11:27:boolean_biggerThan(domain.Tile):this.number => ++this.number
+AOIS_12:27:boolean_biggerThan(domain.Tile):this.number => --this.number
+AOIS_13:27:boolean_biggerThan(domain.Tile):this.number => this.number++
+AOIS_14:27:boolean_biggerThan(domain.Tile):this.number => this.number--
+AOIS_15:27:boolean_biggerThan(domain.Tile):otherTile.number => ++otherTile.number
+AOIS_16:27:boolean_biggerThan(domain.Tile):otherTile.number => --otherTile.number
+AOIS_17:27:boolean_biggerThan(domain.Tile):otherTile.number => otherTile.number++
+AOIS_18:27:boolean_biggerThan(domain.Tile):otherTile.number => otherTile.number--
+AOIS_19:32:boolean_equals(java.lang.Object):this.number => ++this.number
+AOIS_20:32:boolean_equals(java.lang.Object):this.number => --this.number
+AOIS_21:32:boolean_equals(java.lang.Object):this.number => this.number++
+AOIS_22:32:boolean_equals(java.lang.Object):this.number => this.number--
+AOIS_23:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => ++((domain.Tile) tile).number
+AOIS_24:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => --((domain.Tile) tile).number
+AOIS_25:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => ((domain.Tile) tile).number++
+AOIS_26:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => ((domain.Tile) tile).number--
+AOIS_27:37:int_hashCode():hash => hash++
+AOIS_28:37:int_hashCode():hash => hash--
+AOIS_29:42:java.lang.String_toString():this.number => this.number++
+AOIS_30:42:java.lang.String_toString():this.number => this.number--
+ROR_1:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   this.number >= otherTile.number
+ROR_2:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   this.number < otherTile.number
+ROR_3:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   this.number <= otherTile.number
+ROR_4:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   this.number == otherTile.number
+ROR_5:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   this.number != otherTile.number
+ROR_6:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   true
+ROR_7:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>   false
+ROR_8:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   this.number > ((domain.Tile) tile).number
+ROR_9:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   this.number >= ((domain.Tile) tile).number
+ROR_10:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   this.number < ((domain.Tile) tile).number
+ROR_11:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   this.number <= ((domain.Tile) tile).number
+ROR_12:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   this.number != ((domain.Tile) tile).number
+ROR_13:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   true
+ROR_14:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>   false
+COI_1:27:boolean_biggerThan(domain.Tile): this.number > otherTile.number  =>  !(this.number > otherTile.number)
+COI_2:32:boolean_equals(java.lang.Object): this.number == ((domain.Tile) tile).number  =>  !(this.number == ((domain.Tile) tile).number)
+LOI_1:16:Tile(int):number => ~number
+LOI_2:17:Tile(int):this.number => ~this.number
+LOI_3:22:int_getNumber():this.number => ~this.number
+LOI_4:27:boolean_biggerThan(domain.Tile):this.number => ~this.number
+LOI_5:27:boolean_biggerThan(domain.Tile):otherTile.number => ~otherTile.number
+LOI_6:32:boolean_equals(java.lang.Object):this.number => ~this.number
+LOI_7:32:boolean_equals(java.lang.Object):((domain.Tile) tile).number => ~((domain.Tile) tile).number
+LOI_8:37:int_hashCode():hash => ~hash
+LOI_9:42:java.lang.String_toString():this.number => ~this.number
+SDL_1:17:Tile(int): this.number = number; this.hash = (new java.lang.Integer( this.number )).hashCode();  =>   this.hash = (new java.lang.Integer( this.number )).hashCode();
+SDL_2:17:Tile(int): this.number = number; this.hash = (new java.lang.Integer( this.number )).hashCode();  =>   this.number = number;
+SDL_3:23:int_getNumber(): return this.number;  =>   return 0;
+SDL_4:28:boolean_biggerThan(domain.Tile): return this.number > otherTile.number;  =>   return true;
+SDL_5:28:boolean_biggerThan(domain.Tile): return this.number > otherTile.number;  =>   return false;
+SDL_6:33:boolean_equals(java.lang.Object): return this.number == ((domain.Tile) tile).number;  =>   return true;
+SDL_7:33:boolean_equals(java.lang.Object): return this.number == ((domain.Tile) tile).number;  =>   return false;
+SDL_8:38:int_hashCode(): return hash;  =>   return 0;
+SDL_9:43:java.lang.String_toString(): return String.valueOf( this.number );  =>   return \"\";
+ODL_1:27:boolean_biggerThan(domain.Tile):this.number > otherTile.number => this.number
+ODL_2:27:boolean_biggerThan(domain.Tile):this.number > otherTile.number => otherTile.number
+ODL_3:32:boolean_equals(java.lang.Object):this.number == ((domain.Tile) tile).number => this.number
+ODL_4:32:boolean_equals(java.lang.Object):this.number == ((domain.Tile) tile).number => ((domain.Tile) tile).number

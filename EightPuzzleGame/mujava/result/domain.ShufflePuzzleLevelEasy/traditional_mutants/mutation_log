@@ -1,0 +1,110 @@
+AORS_1:23:void_shuffle(domain.Puzzle):i++ => i--
+AOIU_1:23:void_shuffle(domain.Puzzle):i => -i
+AOIU_2:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => -this.numberOfShuffles
+AOIU_3:27:void_shuffle(domain.Puzzle):direction => -direction
+AOIU_4:30:void_shuffle(domain.Puzzle):direction => -direction
+AOIU_5:33:void_shuffle(domain.Puzzle):direction => -direction
+AOIU_6:36:void_shuffle(domain.Puzzle):direction => -direction
+AOIS_1:23:void_shuffle(domain.Puzzle):i => ++i
+AOIS_2:23:void_shuffle(domain.Puzzle):i => --i
+AOIS_3:23:void_shuffle(domain.Puzzle):i => i++
+AOIS_4:23:void_shuffle(domain.Puzzle):i => i--
+AOIS_5:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => ++this.numberOfShuffles
+AOIS_6:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => --this.numberOfShuffles
+AOIS_7:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => this.numberOfShuffles++
+AOIS_8:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => this.numberOfShuffles--
+AOIS_9:27:void_shuffle(domain.Puzzle):direction => ++direction
+AOIS_10:27:void_shuffle(domain.Puzzle):direction => --direction
+AOIS_11:27:void_shuffle(domain.Puzzle):direction => direction++
+AOIS_12:27:void_shuffle(domain.Puzzle):direction => direction--
+AOIS_13:30:void_shuffle(domain.Puzzle):direction => ++direction
+AOIS_14:30:void_shuffle(domain.Puzzle):direction => --direction
+AOIS_15:30:void_shuffle(domain.Puzzle):direction => direction++
+AOIS_16:30:void_shuffle(domain.Puzzle):direction => direction--
+AOIS_17:33:void_shuffle(domain.Puzzle):direction => ++direction
+AOIS_18:33:void_shuffle(domain.Puzzle):direction => --direction
+AOIS_19:33:void_shuffle(domain.Puzzle):direction => direction++
+AOIS_20:33:void_shuffle(domain.Puzzle):direction => direction--
+AOIS_21:36:void_shuffle(domain.Puzzle):direction => ++direction
+AOIS_22:36:void_shuffle(domain.Puzzle):direction => --direction
+AOIS_23:36:void_shuffle(domain.Puzzle):direction => direction++
+AOIS_24:36:void_shuffle(domain.Puzzle):direction => direction--
+ROR_1:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   i > this.numberOfShuffles
+ROR_2:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   i >= this.numberOfShuffles
+ROR_3:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   i <= this.numberOfShuffles
+ROR_4:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   i == this.numberOfShuffles
+ROR_5:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   i != this.numberOfShuffles
+ROR_6:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   true
+ROR_7:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>   false
+ROR_8:27:void_shuffle(domain.Puzzle): direction == 0  =>   direction > 0
+ROR_9:27:void_shuffle(domain.Puzzle): direction == 0  =>   direction >= 0
+ROR_10:27:void_shuffle(domain.Puzzle): direction == 0  =>   direction < 0
+ROR_11:27:void_shuffle(domain.Puzzle): direction == 0  =>   direction <= 0
+ROR_12:27:void_shuffle(domain.Puzzle): direction == 0  =>   direction != 0
+ROR_13:27:void_shuffle(domain.Puzzle): direction == 0  =>   true
+ROR_14:27:void_shuffle(domain.Puzzle): direction == 0  =>   false
+ROR_15:30:void_shuffle(domain.Puzzle): direction == 1  =>   direction > 1
+ROR_16:30:void_shuffle(domain.Puzzle): direction == 1  =>   direction >= 1
+ROR_17:30:void_shuffle(domain.Puzzle): direction == 1  =>   direction < 1
+ROR_18:30:void_shuffle(domain.Puzzle): direction == 1  =>   direction <= 1
+ROR_19:30:void_shuffle(domain.Puzzle): direction == 1  =>   direction != 1
+ROR_20:30:void_shuffle(domain.Puzzle): direction == 1  =>   true
+ROR_21:30:void_shuffle(domain.Puzzle): direction == 1  =>   false
+ROR_22:33:void_shuffle(domain.Puzzle): direction == 2  =>   direction > 2
+ROR_23:33:void_shuffle(domain.Puzzle): direction == 2  =>   direction >= 2
+ROR_24:33:void_shuffle(domain.Puzzle): direction == 2  =>   direction < 2
+ROR_25:33:void_shuffle(domain.Puzzle): direction == 2  =>   direction <= 2
+ROR_26:33:void_shuffle(domain.Puzzle): direction == 2  =>   direction != 2
+ROR_27:33:void_shuffle(domain.Puzzle): direction == 2  =>   true
+ROR_28:33:void_shuffle(domain.Puzzle): direction == 2  =>   false
+ROR_29:36:void_shuffle(domain.Puzzle): direction == 3  =>   direction > 3
+ROR_30:36:void_shuffle(domain.Puzzle): direction == 3  =>   direction >= 3
+ROR_31:36:void_shuffle(domain.Puzzle): direction == 3  =>   direction < 3
+ROR_32:36:void_shuffle(domain.Puzzle): direction == 3  =>   direction <= 3
+ROR_33:36:void_shuffle(domain.Puzzle): direction == 3  =>   direction != 3
+ROR_34:36:void_shuffle(domain.Puzzle): direction == 3  =>   true
+ROR_35:36:void_shuffle(domain.Puzzle): direction == 3  =>   false
+COD_1:39:void_shuffle(domain.Puzzle):!changed => changed
+COI_1:23:void_shuffle(domain.Puzzle): i < this.numberOfShuffles  =>  !(i < this.numberOfShuffles)
+COI_2:27:void_shuffle(domain.Puzzle): direction == 0  =>  !(direction == 0)
+COI_3:28:void_shuffle(domain.Puzzle): changed  =>  !changed
+COI_4:30:void_shuffle(domain.Puzzle): direction == 1  =>  !(direction == 1)
+COI_5:31:void_shuffle(domain.Puzzle): changed  =>  !changed
+COI_6:33:void_shuffle(domain.Puzzle): direction == 2  =>  !(direction == 2)
+COI_7:34:void_shuffle(domain.Puzzle): changed  =>  !changed
+COI_8:36:void_shuffle(domain.Puzzle): direction == 3  =>  !(direction == 3)
+COI_9:37:void_shuffle(domain.Puzzle): changed  =>  !changed
+LOI_1:23:void_shuffle(domain.Puzzle):i => ~i
+LOI_2:23:void_shuffle(domain.Puzzle):this.numberOfShuffles => ~this.numberOfShuffles
+LOI_3:23:void_shuffle(domain.Puzzle):i => ~i
+LOI_4:27:void_shuffle(domain.Puzzle):direction => ~direction
+LOI_5:30:void_shuffle(domain.Puzzle):direction => ~direction
+LOI_6:33:void_shuffle(domain.Puzzle):direction => ~direction
+LOI_7:36:void_shuffle(domain.Puzzle):direction => ~direction
+SDL_1:23:void_shuffle(domain.Puzzle): java.util.Random generateRandom = new java.util.Random(); for (int i = 0; i < this.numberOfShuffles; i++) {     boolean changed = false;     do {         int direction = generateRandom.nextInt( 4 );         if (direction == 0) {             changed = game.moveEmptyCell( Direction.UP );         }         if (direction == 1) {             changed = game.moveEmptyCell( Direction.DOWN );         }         if (direction == 2) {             changed = game.moveEmptyCell( Direction.LEFT );         }         if (direction == 3) {             changed = game.moveEmptyCell( Direction.RIGHT );         }     } while (!changed); }  =>   java.util.Random generateRandom = new java.util.Random();
+SDL_2:25:void_shuffle(domain.Puzzle): boolean changed = false; do {     int direction = generateRandom.nextInt( 4 );     if (direction == 0) {         changed = game.moveEmptyCell( Direction.UP );     }     if (direction == 1) {         changed = game.moveEmptyCell( Direction.DOWN );     }     if (direction == 2) {         changed = game.moveEmptyCell( Direction.LEFT );     }     if (direction == 3) {         changed = game.moveEmptyCell( Direction.RIGHT );     } } while (!changed);  =>   boolean changed = false;
+SDL_3:41:void_shuffle(domain.Puzzle): for (int i = 0; i < this.numberOfShuffles; i++) {     boolean changed = false;     do {         int direction = generateRandom.nextInt( 4 );         if (direction == 0) {             changed = game.moveEmptyCell( Direction.UP );         }         if (direction == 1) {             changed = game.moveEmptyCell( Direction.DOWN );         }         if (direction == 2) {             changed = game.moveEmptyCell( Direction.LEFT );         }         if (direction == 3) {             changed = game.moveEmptyCell( Direction.RIGHT );         }     } while (!changed); }  =>   for (int i = 0;; i++) {     boolean changed = false;     do {         int direction = generateRandom.nextInt( 4 );         if (direction == 0) {             changed = game.moveEmptyCell( Direction.UP );         }         if (direction == 1) {             changed = game.moveEmptyCell( Direction.DOWN );         }         if (direction == 2) {             changed = game.moveEmptyCell( Direction.LEFT );         }         if (direction == 3) {             changed = game.moveEmptyCell( Direction.RIGHT );         }     } while (!changed); }
+SDL_4:41:void_shuffle(domain.Puzzle): for (int i = 0; i < this.numberOfShuffles; i++) {     boolean changed = false;     do {         int direction = generateRandom.nextInt( 4 );         if (direction == 0) {             changed = game.moveEmptyCell( Direction.UP );         }         if (direction == 1) {             changed = game.moveEmptyCell( Direction.DOWN );         }         if (direction == 2) {             changed = game.moveEmptyCell( Direction.LEFT );         }         if (direction == 3) {             changed = game.moveEmptyCell( Direction.RIGHT );         }     } while (!changed); }  =>   for (int i = 0; i < this.numberOfShuffles;) {     boolean changed = false;     do {         int direction = generateRandom.nextInt( 4 );         if (direction == 0) {             changed = game.moveEmptyCell( Direction.UP );         }         if (direction == 1) {             changed = game.moveEmptyCell( Direction.DOWN );         }         if (direction == 2) {             changed = game.moveEmptyCell( Direction.LEFT );         }         if (direction == 3) {             changed = game.moveEmptyCell( Direction.RIGHT );         }     } while (!changed); }
+VDL_1:23:void_shuffle(domain.Puzzle):i < this.numberOfShuffles => this.numberOfShuffles
+VDL_2:23:void_shuffle(domain.Puzzle):i++ =>  
+VDL_3:27:void_shuffle(domain.Puzzle):direction == 0 => 0
+VDL_4:30:void_shuffle(domain.Puzzle):direction == 1 => 1
+VDL_5:33:void_shuffle(domain.Puzzle):direction == 2 => 2
+VDL_6:36:void_shuffle(domain.Puzzle):direction == 3 => 3
+VDL_7:39:void_shuffle(domain.Puzzle):!changed =>  
+ODL_1:23:void_shuffle(domain.Puzzle):i < this.numberOfShuffles => i
+ODL_2:23:void_shuffle(domain.Puzzle):i < this.numberOfShuffles => this.numberOfShuffles
+ODL_3:23:void_shuffle(domain.Puzzle):i++ => i
+ODL_4:27:void_shuffle(domain.Puzzle):direction == 0 => direction
+ODL_5:27:void_shuffle(domain.Puzzle):direction == 0 => 0
+ODL_6:30:void_shuffle(domain.Puzzle):direction == 1 => direction
+ODL_7:30:void_shuffle(domain.Puzzle):direction == 1 => 1
+ODL_8:33:void_shuffle(domain.Puzzle):direction == 2 => direction
+ODL_9:33:void_shuffle(domain.Puzzle):direction == 2 => 2
+ODL_10:36:void_shuffle(domain.Puzzle):direction == 3 => direction
+ODL_11:36:void_shuffle(domain.Puzzle):direction == 3 => 3
+ODL_12:39:void_shuffle(domain.Puzzle):!changed => changed
+CDL_1:27:void_shuffle(domain.Puzzle):direction == 0 => direction
+CDL_2:30:void_shuffle(domain.Puzzle):direction == 1 => direction
+CDL_3:33:void_shuffle(domain.Puzzle):direction == 2 => direction
+CDL_4:36:void_shuffle(domain.Puzzle):direction == 3 => direction

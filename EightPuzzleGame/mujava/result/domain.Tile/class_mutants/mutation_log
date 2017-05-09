@@ -1,0 +1,8 @@
+PCD_1:32:(domain.Tile) tile => tile
+JSI_1:10:static is inserted
+JSI_2:12:static is inserted
+JTD_1:16:this.number => number
+JTD_2:17:this.number => number
+JTI_1:16:number  -->  this.number
+IOD_1:30:public boolean equals(java.lang.Object tile) is deleted.
+IOD_2:40:public java.lang.String toString() is deleted.

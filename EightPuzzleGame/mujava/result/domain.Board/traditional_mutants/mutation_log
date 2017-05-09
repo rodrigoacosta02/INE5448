@@ -1,0 +1,564 @@
+AORB_1:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position1.getColumn() * position2.getColumn()
+AORB_2:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position1.getColumn() / position2.getColumn()
+AORB_3:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position1.getColumn() % position2.getColumn()
+AORB_4:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position1.getColumn() + position2.getColumn()
+AORB_5:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position1.getLine() * position2.getLine()
+AORB_6:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position1.getLine() / position2.getLine()
+AORB_7:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position1.getLine() % position2.getLine()
+AORB_8:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position1.getLine() + position2.getLine()
+AORS_1:29:void_initializeAllCells():i++ => i--
+AORS_2:30:void_initializeAllCells():j++ => j--
+AORS_3:99:boolean_equals(java.lang.Object):i++ => i--
+AORS_4:100:boolean_equals(java.lang.Object):j++ => j--
+AORS_5:112:java.lang.String_toString():i++ => i--
+AORS_6:113:java.lang.String_toString():j++ => j--
+AOIU_1:21:Board(int,int):line => -line
+AOIU_2:22:Board(int,int):column => -column
+AOIU_3:23:Board(int,int):line => -line
+AOIU_4:23:Board(int,int):column => -column
+AOIU_5:29:void_initializeAllCells():i => -i
+AOIU_6:29:void_initializeAllCells():this.line => -this.line
+AOIU_7:30:void_initializeAllCells():j => -j
+AOIU_8:30:void_initializeAllCells():this.column => -this.column
+AOIU_9:31:void_initializeAllCells():i => -i
+AOIU_10:31:void_initializeAllCells():j => -j
+AOIU_11:99:boolean_equals(java.lang.Object):i => -i
+AOIU_12:99:boolean_equals(java.lang.Object):this.line => -this.line
+AOIU_13:100:boolean_equals(java.lang.Object):j => -j
+AOIU_14:100:boolean_equals(java.lang.Object):this.column => -this.column
+AOIU_15:112:java.lang.String_toString():i => -i
+AOIU_16:112:java.lang.String_toString():this.line => -this.line
+AOIU_17:113:java.lang.String_toString():j => -j
+AOIU_18:113:java.lang.String_toString():this.column => -this.column
+AOIU_19:114:java.lang.String_toString():i => -i
+AOIU_20:114:java.lang.String_toString():j => -j
+AOIS_1:21:Board(int,int):line => ++line
+AOIS_2:21:Board(int,int):line => --line
+AOIS_3:21:Board(int,int):line => line++
+AOIS_4:21:Board(int,int):line => line--
+AOIS_5:22:Board(int,int):column => ++column
+AOIS_6:22:Board(int,int):column => --column
+AOIS_7:22:Board(int,int):column => column++
+AOIS_8:22:Board(int,int):column => column--
+AOIS_9:23:Board(int,int):line => ++line
+AOIS_10:23:Board(int,int):line => --line
+AOIS_11:23:Board(int,int):line => line++
+AOIS_12:23:Board(int,int):line => line--
+AOIS_13:23:Board(int,int):column => ++column
+AOIS_14:23:Board(int,int):column => --column
+AOIS_15:23:Board(int,int):column => column++
+AOIS_16:23:Board(int,int):column => column--
+AOIS_17:29:void_initializeAllCells():i => ++i
+AOIS_18:29:void_initializeAllCells():i => --i
+AOIS_19:29:void_initializeAllCells():i => i++
+AOIS_20:29:void_initializeAllCells():i => i--
+AOIS_21:29:void_initializeAllCells():this.line => ++this.line
+AOIS_22:29:void_initializeAllCells():this.line => --this.line
+AOIS_23:29:void_initializeAllCells():this.line => this.line++
+AOIS_24:29:void_initializeAllCells():this.line => this.line--
+AOIS_25:30:void_initializeAllCells():j => ++j
+AOIS_26:30:void_initializeAllCells():j => --j
+AOIS_27:30:void_initializeAllCells():j => j++
+AOIS_28:30:void_initializeAllCells():j => j--
+AOIS_29:30:void_initializeAllCells():this.column => ++this.column
+AOIS_30:30:void_initializeAllCells():this.column => --this.column
+AOIS_31:30:void_initializeAllCells():this.column => this.column++
+AOIS_32:30:void_initializeAllCells():this.column => this.column--
+AOIS_33:31:void_initializeAllCells():i => i++
+AOIS_34:31:void_initializeAllCells():i => i--
+AOIS_35:31:void_initializeAllCells():j => j++
+AOIS_36:31:void_initializeAllCells():j => j--
+AOIS_37:76:boolean_isInTheBottomBorder(domain.Position):this.line => ++this.line
+AOIS_38:76:boolean_isInTheBottomBorder(domain.Position):this.line => --this.line
+AOIS_39:76:boolean_isInTheBottomBorder(domain.Position):this.line => this.line++
+AOIS_40:76:boolean_isInTheBottomBorder(domain.Position):this.line => this.line--
+AOIS_41:86:boolean_isInTheRightBorder(domain.Position):this.column => ++this.column
+AOIS_42:86:boolean_isInTheRightBorder(domain.Position):this.column => --this.column
+AOIS_43:86:boolean_isInTheRightBorder(domain.Position):this.column => this.column++
+AOIS_44:86:boolean_isInTheRightBorder(domain.Position):this.column => this.column--
+AOIS_45:91:boolean_isInsideTheBoard(domain.Position):this.line => ++this.line
+AOIS_46:91:boolean_isInsideTheBoard(domain.Position):this.line => --this.line
+AOIS_47:91:boolean_isInsideTheBoard(domain.Position):this.line => this.line++
+AOIS_48:91:boolean_isInsideTheBoard(domain.Position):this.line => this.line--
+AOIS_49:91:boolean_isInsideTheBoard(domain.Position):this.column => ++this.column
+AOIS_50:91:boolean_isInsideTheBoard(domain.Position):this.column => --this.column
+AOIS_51:91:boolean_isInsideTheBoard(domain.Position):this.column => this.column++
+AOIS_52:91:boolean_isInsideTheBoard(domain.Position):this.column => this.column--
+AOIS_53:96:boolean_equals(java.lang.Object):this.line => ++this.line
+AOIS_54:96:boolean_equals(java.lang.Object):this.line => --this.line
+AOIS_55:96:boolean_equals(java.lang.Object):this.line => this.line++
+AOIS_56:96:boolean_equals(java.lang.Object):this.line => this.line--
+AOIS_57:96:boolean_equals(java.lang.Object):((domain.Board) board).line => ++((domain.Board) board).line
+AOIS_58:96:boolean_equals(java.lang.Object):((domain.Board) board).line => --((domain.Board) board).line
+AOIS_59:96:boolean_equals(java.lang.Object):((domain.Board) board).line => ((domain.Board) board).line++
+AOIS_60:96:boolean_equals(java.lang.Object):((domain.Board) board).line => ((domain.Board) board).line--
+AOIS_61:96:boolean_equals(java.lang.Object):this.column => ++this.column
+AOIS_62:96:boolean_equals(java.lang.Object):this.column => --this.column
+AOIS_63:96:boolean_equals(java.lang.Object):this.column => this.column++
+AOIS_64:96:boolean_equals(java.lang.Object):this.column => this.column--
+AOIS_65:96:boolean_equals(java.lang.Object):((domain.Board) board).column => ++((domain.Board) board).column
+AOIS_66:96:boolean_equals(java.lang.Object):((domain.Board) board).column => --((domain.Board) board).column
+AOIS_67:96:boolean_equals(java.lang.Object):((domain.Board) board).column => ((domain.Board) board).column++
+AOIS_68:96:boolean_equals(java.lang.Object):((domain.Board) board).column => ((domain.Board) board).column--
+AOIS_69:99:boolean_equals(java.lang.Object):i => ++i
+AOIS_70:99:boolean_equals(java.lang.Object):i => --i
+AOIS_71:99:boolean_equals(java.lang.Object):i => i++
+AOIS_72:99:boolean_equals(java.lang.Object):i => i--
+AOIS_73:99:boolean_equals(java.lang.Object):this.line => ++this.line
+AOIS_74:99:boolean_equals(java.lang.Object):this.line => --this.line
+AOIS_75:99:boolean_equals(java.lang.Object):this.line => this.line++
+AOIS_76:99:boolean_equals(java.lang.Object):this.line => this.line--
+AOIS_77:100:boolean_equals(java.lang.Object):j => ++j
+AOIS_78:100:boolean_equals(java.lang.Object):j => --j
+AOIS_79:100:boolean_equals(java.lang.Object):j => j++
+AOIS_80:100:boolean_equals(java.lang.Object):j => j--
+AOIS_81:100:boolean_equals(java.lang.Object):this.column => ++this.column
+AOIS_82:100:boolean_equals(java.lang.Object):this.column => --this.column
+AOIS_83:100:boolean_equals(java.lang.Object):this.column => this.column++
+AOIS_84:100:boolean_equals(java.lang.Object):this.column => this.column--
+AOIS_85:112:java.lang.String_toString():i => ++i
+AOIS_86:112:java.lang.String_toString():i => --i
+AOIS_87:112:java.lang.String_toString():i => i++
+AOIS_88:112:java.lang.String_toString():i => i--
+AOIS_89:112:java.lang.String_toString():this.line => ++this.line
+AOIS_90:112:java.lang.String_toString():this.line => --this.line
+AOIS_91:112:java.lang.String_toString():this.line => this.line++
+AOIS_92:112:java.lang.String_toString():this.line => this.line--
+AOIS_93:113:java.lang.String_toString():j => ++j
+AOIS_94:113:java.lang.String_toString():j => --j
+AOIS_95:113:java.lang.String_toString():j => j++
+AOIS_96:113:java.lang.String_toString():j => j--
+AOIS_97:113:java.lang.String_toString():this.column => ++this.column
+AOIS_98:113:java.lang.String_toString():this.column => --this.column
+AOIS_99:113:java.lang.String_toString():this.column => this.column++
+AOIS_100:113:java.lang.String_toString():this.column => this.column--
+AOIS_101:114:java.lang.String_toString():i => i++
+AOIS_102:114:java.lang.String_toString():i => i--
+AOIS_103:114:java.lang.String_toString():j => j++
+AOIS_104:114:java.lang.String_toString():j => j--
+AOIS_105:115:java.lang.String_toString():i => i++
+AOIS_106:115:java.lang.String_toString():i => i--
+AOIS_107:115:java.lang.String_toString():j => j++
+AOIS_108:115:java.lang.String_toString():j => j--
+ROR_1:29:void_initializeAllCells(): i <= this.line  =>   i > this.line
+ROR_2:29:void_initializeAllCells(): i <= this.line  =>   i >= this.line
+ROR_3:29:void_initializeAllCells(): i <= this.line  =>   i < this.line
+ROR_4:29:void_initializeAllCells(): i <= this.line  =>   i == this.line
+ROR_5:29:void_initializeAllCells(): i <= this.line  =>   i != this.line
+ROR_6:29:void_initializeAllCells(): i <= this.line  =>   true
+ROR_7:29:void_initializeAllCells(): i <= this.line  =>   false
+ROR_8:30:void_initializeAllCells(): j <= this.column  =>   j > this.column
+ROR_9:30:void_initializeAllCells(): j <= this.column  =>   j >= this.column
+ROR_10:30:void_initializeAllCells(): j <= this.column  =>   j < this.column
+ROR_11:30:void_initializeAllCells(): j <= this.column  =>   j == this.column
+ROR_12:30:void_initializeAllCells(): j <= this.column  =>   j != this.column
+ROR_13:30:void_initializeAllCells(): j <= this.column  =>   true
+ROR_14:30:void_initializeAllCells(): j <= this.column  =>   false
+ROR_15:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   position1.getLine() > position2.getLine()
+ROR_16:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   position1.getLine() >= position2.getLine()
+ROR_17:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   position1.getLine() < position2.getLine()
+ROR_18:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   position1.getLine() <= position2.getLine()
+ROR_19:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   position1.getLine() != position2.getLine()
+ROR_20:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   true
+ROR_21:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>   false
+ROR_22:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   Math.abs( position1.getColumn() - position2.getColumn() ) > 1
+ROR_23:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   Math.abs( position1.getColumn() - position2.getColumn() ) >= 1
+ROR_24:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   Math.abs( position1.getColumn() - position2.getColumn() ) < 1
+ROR_25:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   Math.abs( position1.getColumn() - position2.getColumn() ) <= 1
+ROR_26:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   Math.abs( position1.getColumn() - position2.getColumn() ) != 1
+ROR_27:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   true
+ROR_28:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   false
+ROR_29:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   position1.getColumn() > position2.getColumn()
+ROR_30:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   position1.getColumn() >= position2.getColumn()
+ROR_31:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   position1.getColumn() < position2.getColumn()
+ROR_32:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   position1.getColumn() <= position2.getColumn()
+ROR_33:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   position1.getColumn() != position2.getColumn()
+ROR_34:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   true
+ROR_35:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>   false
+ROR_36:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   Math.abs( position1.getLine() - position2.getLine() ) > 1
+ROR_37:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   Math.abs( position1.getLine() - position2.getLine() ) >= 1
+ROR_38:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   Math.abs( position1.getLine() - position2.getLine() ) < 1
+ROR_39:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   Math.abs( position1.getLine() - position2.getLine() ) <= 1
+ROR_40:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   Math.abs( position1.getLine() - position2.getLine() ) != 1
+ROR_41:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   true
+ROR_42:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   false
+ROR_43:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   position.getLine() > 1
+ROR_44:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   position.getLine() >= 1
+ROR_45:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   position.getLine() < 1
+ROR_46:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   position.getLine() <= 1
+ROR_47:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   position.getLine() != 1
+ROR_48:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   true
+ROR_49:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>   false
+ROR_50:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   position.getLine() > this.line
+ROR_51:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   position.getLine() >= this.line
+ROR_52:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   position.getLine() < this.line
+ROR_53:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   position.getLine() <= this.line
+ROR_54:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   position.getLine() != this.line
+ROR_55:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   true
+ROR_56:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>   false
+ROR_57:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   position.getColumn() > 1
+ROR_58:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   position.getColumn() >= 1
+ROR_59:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   position.getColumn() < 1
+ROR_60:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   position.getColumn() <= 1
+ROR_61:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   position.getColumn() != 1
+ROR_62:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   true
+ROR_63:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>   false
+ROR_64:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   position.getColumn() > this.column
+ROR_65:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   position.getColumn() >= this.column
+ROR_66:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   position.getColumn() < this.column
+ROR_67:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   position.getColumn() <= this.column
+ROR_68:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   position.getColumn() != this.column
+ROR_69:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   true
+ROR_70:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>   false
+ROR_71:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   position.getLine() >= 0
+ROR_72:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   position.getLine() < 0
+ROR_73:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   position.getLine() <= 0
+ROR_74:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   position.getLine() == 0
+ROR_75:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   position.getLine() != 0
+ROR_76:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   true
+ROR_77:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>   false
+ROR_78:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   position.getLine() > this.line
+ROR_79:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   position.getLine() >= this.line
+ROR_80:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   position.getLine() < this.line
+ROR_81:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   position.getLine() == this.line
+ROR_82:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   position.getLine() != this.line
+ROR_83:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   true
+ROR_84:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>   false
+ROR_85:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   position.getColumn() >= 0
+ROR_86:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   position.getColumn() < 0
+ROR_87:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   position.getColumn() <= 0
+ROR_88:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   position.getColumn() == 0
+ROR_89:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   position.getColumn() != 0
+ROR_90:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   true
+ROR_91:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>   false
+ROR_92:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   position.getColumn() > this.column
+ROR_93:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   position.getColumn() >= this.column
+ROR_94:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   position.getColumn() < this.column
+ROR_95:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   position.getColumn() == this.column
+ROR_96:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   position.getColumn() != this.column
+ROR_97:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   true
+ROR_98:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>   false
+ROR_99:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   this.line > ((domain.Board) board).line
+ROR_100:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   this.line >= ((domain.Board) board).line
+ROR_101:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   this.line < ((domain.Board) board).line
+ROR_102:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   this.line <= ((domain.Board) board).line
+ROR_103:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   this.line == ((domain.Board) board).line
+ROR_104:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   true
+ROR_105:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>   false
+ROR_106:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   this.column > ((domain.Board) board).column
+ROR_107:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   this.column >= ((domain.Board) board).column
+ROR_108:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   this.column < ((domain.Board) board).column
+ROR_109:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   this.column <= ((domain.Board) board).column
+ROR_110:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   this.column == ((domain.Board) board).column
+ROR_111:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   true
+ROR_112:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>   false
+ROR_113:99:boolean_equals(java.lang.Object): i <= this.line  =>   i > this.line
+ROR_114:99:boolean_equals(java.lang.Object): i <= this.line  =>   i >= this.line
+ROR_115:99:boolean_equals(java.lang.Object): i <= this.line  =>   i < this.line
+ROR_116:99:boolean_equals(java.lang.Object): i <= this.line  =>   i == this.line
+ROR_117:99:boolean_equals(java.lang.Object): i <= this.line  =>   i != this.line
+ROR_118:99:boolean_equals(java.lang.Object): i <= this.line  =>   true
+ROR_119:99:boolean_equals(java.lang.Object): i <= this.line  =>   false
+ROR_120:100:boolean_equals(java.lang.Object): j <= this.column  =>   j > this.column
+ROR_121:100:boolean_equals(java.lang.Object): j <= this.column  =>   j >= this.column
+ROR_122:100:boolean_equals(java.lang.Object): j <= this.column  =>   j < this.column
+ROR_123:100:boolean_equals(java.lang.Object): j <= this.column  =>   j == this.column
+ROR_124:100:boolean_equals(java.lang.Object): j <= this.column  =>   j != this.column
+ROR_125:100:boolean_equals(java.lang.Object): j <= this.column  =>   true
+ROR_126:100:boolean_equals(java.lang.Object): j <= this.column  =>   false
+ROR_127:112:java.lang.String_toString(): i <= this.line  =>   i > this.line
+ROR_128:112:java.lang.String_toString(): i <= this.line  =>   i >= this.line
+ROR_129:112:java.lang.String_toString(): i <= this.line  =>   i < this.line
+ROR_130:112:java.lang.String_toString(): i <= this.line  =>   i == this.line
+ROR_131:112:java.lang.String_toString(): i <= this.line  =>   i != this.line
+ROR_132:112:java.lang.String_toString(): i <= this.line  =>   true
+ROR_133:112:java.lang.String_toString(): i <= this.line  =>   false
+ROR_134:113:java.lang.String_toString(): j <= this.column  =>   j > this.column
+ROR_135:113:java.lang.String_toString(): j <= this.column  =>   j >= this.column
+ROR_136:113:java.lang.String_toString(): j <= this.column  =>   j < this.column
+ROR_137:113:java.lang.String_toString(): j <= this.column  =>   j == this.column
+ROR_138:113:java.lang.String_toString(): j <= this.column  =>   j != this.column
+ROR_139:113:java.lang.String_toString(): j <= this.column  =>   true
+ROR_140:113:java.lang.String_toString(): j <= this.column  =>   false
+COR_1:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>   this.isInsideTheBoard( position1 ) || this.isInsideTheBoard( position2 )
+COR_2:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>   this.isInsideTheBoard( position1 ) ^ this.isInsideTheBoard( position2 )
+COR_3:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   position1.getLine() == position2.getLine() || Math.abs( position1.getColumn() - position2.getColumn() ) == 1
+COR_4:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>   position1.getLine() == position2.getLine() ^ Math.abs( position1.getColumn() - position2.getColumn() ) == 1
+COR_5:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   position1.getColumn() == position2.getColumn() || Math.abs( position1.getLine() - position2.getLine() ) == 1
+COR_6:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   position1.getColumn() == position2.getColumn() ^ Math.abs( position1.getLine() - position2.getLine() ) == 1
+COR_7:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 && (position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COR_8:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>   (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1) ^ (position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COR_9:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)  =>   this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) || (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COR_10:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)  =>   (this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )) ^ (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COR_11:57:boolean_changeTilesInPositions(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>   this.isInsideTheBoard( position1 ) || this.isInsideTheBoard( position2 )
+COR_12:57:boolean_changeTilesInPositions(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>   this.isInsideTheBoard( position1 ) ^ this.isInsideTheBoard( position2 )
+COR_13:71:boolean_isInTheSuperiorBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == 1  =>   this.isInsideTheBoard( position ) || position.getLine() == 1
+COR_14:71:boolean_isInTheSuperiorBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == 1  =>   this.isInsideTheBoard( position ) ^ position.getLine() == 1
+COR_15:76:boolean_isInTheBottomBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == this.line  =>   this.isInsideTheBoard( position ) || position.getLine() == this.line
+COR_16:76:boolean_isInTheBottomBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == this.line  =>   this.isInsideTheBoard( position ) ^ position.getLine() == this.line
+COR_17:81:boolean_isInTheLeftBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == 1  =>   this.isInsideTheBoard( position ) || position.getColumn() == 1
+COR_18:81:boolean_isInTheLeftBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == 1  =>   this.isInsideTheBoard( position ) ^ position.getColumn() == 1
+COR_19:86:boolean_isInTheRightBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == this.column  =>   this.isInsideTheBoard( position ) || position.getColumn() == this.column
+COR_20:86:boolean_isInTheRightBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == this.column  =>   this.isInsideTheBoard( position ) ^ position.getColumn() == this.column
+COR_21:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line  =>   position.getLine() > 0 || position.getLine() <= this.line
+COR_22:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line  =>   position.getLine() > 0 ^ position.getLine() <= this.line
+COR_23:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0  =>   position.getLine() > 0 && position.getLine() <= this.line || position.getColumn() > 0
+COR_24:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0  =>   (position.getLine() > 0 && position.getLine() <= this.line) ^ position.getColumn() > 0
+COR_25:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column  =>   position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 || position.getColumn() <= this.column
+COR_26:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column  =>   (position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0) ^ position.getColumn() <= this.column
+COR_27:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column  =>   this.line != ((domain.Board) board).line && this.column != ((domain.Board) board).column
+COR_28:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column  =>   this.line != ((domain.Board) board).line ^ this.column != ((domain.Board) board).column
+COD_1:101:boolean_equals(java.lang.Object):!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) ) => this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )
+COI_1:29:void_initializeAllCells(): i <= this.line  =>  !(i <= this.line)
+COI_2:30:void_initializeAllCells(): j <= this.column  =>  !(j <= this.column)
+COI_3:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>  !(this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ))
+COI_4:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine()  =>  !(position1.getLine() == position2.getLine())
+COI_5:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>  !(Math.abs( position1.getColumn() - position2.getColumn() ) == 1)
+COI_6:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1  =>  !(position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1)
+COI_7:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn()  =>  !(position1.getColumn() == position2.getColumn())
+COI_8:51:boolean_isAdjacent(domain.Position,domain.Position): Math.abs( position1.getLine() - position2.getLine() ) == 1  =>  !(Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COI_9:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>  !(position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COI_10:51:boolean_isAdjacent(domain.Position,domain.Position): position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1  =>  !(position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)
+COI_11:51:boolean_isAdjacent(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1)  =>  !(this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1))
+COI_12:57:boolean_changeTilesInPositions(domain.Position,domain.Position): this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )  =>  !(this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ))
+COI_13:71:boolean_isInTheSuperiorBorder(domain.Position): position.getLine() == 1  =>  !(position.getLine() == 1)
+COI_14:71:boolean_isInTheSuperiorBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == 1  =>  !(this.isInsideTheBoard( position ) && position.getLine() == 1)
+COI_15:76:boolean_isInTheBottomBorder(domain.Position): position.getLine() == this.line  =>  !(position.getLine() == this.line)
+COI_16:76:boolean_isInTheBottomBorder(domain.Position): this.isInsideTheBoard( position ) && position.getLine() == this.line  =>  !(this.isInsideTheBoard( position ) && position.getLine() == this.line)
+COI_17:81:boolean_isInTheLeftBorder(domain.Position): position.getColumn() == 1  =>  !(position.getColumn() == 1)
+COI_18:81:boolean_isInTheLeftBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == 1  =>  !(this.isInsideTheBoard( position ) && position.getColumn() == 1)
+COI_19:86:boolean_isInTheRightBorder(domain.Position): position.getColumn() == this.column  =>  !(position.getColumn() == this.column)
+COI_20:86:boolean_isInTheRightBorder(domain.Position): this.isInsideTheBoard( position ) && position.getColumn() == this.column  =>  !(this.isInsideTheBoard( position ) && position.getColumn() == this.column)
+COI_21:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0  =>  !(position.getLine() > 0)
+COI_22:91:boolean_isInsideTheBoard(domain.Position): position.getLine() <= this.line  =>  !(position.getLine() <= this.line)
+COI_23:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line  =>  !(position.getLine() > 0 && position.getLine() <= this.line)
+COI_24:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() > 0  =>  !(position.getColumn() > 0)
+COI_25:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0  =>  !(position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0)
+COI_26:91:boolean_isInsideTheBoard(domain.Position): position.getColumn() <= this.column  =>  !(position.getColumn() <= this.column)
+COI_27:91:boolean_isInsideTheBoard(domain.Position): position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column  =>  !(position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column)
+COI_28:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line  =>  !(this.line != ((domain.Board) board).line)
+COI_29:96:boolean_equals(java.lang.Object): this.column != ((domain.Board) board).column  =>  !(this.column != ((domain.Board) board).column)
+COI_30:96:boolean_equals(java.lang.Object): this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column  =>  !(this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column)
+COI_31:99:boolean_equals(java.lang.Object): i <= this.line  =>  !(i <= this.line)
+COI_32:100:boolean_equals(java.lang.Object): j <= this.column  =>  !(j <= this.column)
+COI_33:112:java.lang.String_toString(): i <= this.line  =>  !(i <= this.line)
+COI_34:113:java.lang.String_toString(): j <= this.column  =>  !(j <= this.column)
+LOI_1:21:Board(int,int):line => ~line
+LOI_2:22:Board(int,int):column => ~column
+LOI_3:23:Board(int,int):line => ~line
+LOI_4:23:Board(int,int):column => ~column
+LOI_5:29:void_initializeAllCells():i => ~i
+LOI_6:29:void_initializeAllCells():this.line => ~this.line
+LOI_7:29:void_initializeAllCells():i => ~i
+LOI_8:30:void_initializeAllCells():j => ~j
+LOI_9:30:void_initializeAllCells():this.column => ~this.column
+LOI_10:30:void_initializeAllCells():j => ~j
+LOI_11:31:void_initializeAllCells():i => ~i
+LOI_12:31:void_initializeAllCells():j => ~j
+LOI_13:76:boolean_isInTheBottomBorder(domain.Position):this.line => ~this.line
+LOI_14:86:boolean_isInTheRightBorder(domain.Position):this.column => ~this.column
+LOI_15:91:boolean_isInsideTheBoard(domain.Position):this.line => ~this.line
+LOI_16:91:boolean_isInsideTheBoard(domain.Position):this.column => ~this.column
+LOI_17:96:boolean_equals(java.lang.Object):this.line => ~this.line
+LOI_18:96:boolean_equals(java.lang.Object):((domain.Board) board).line => ~((domain.Board) board).line
+LOI_19:96:boolean_equals(java.lang.Object):this.column => ~this.column
+LOI_20:96:boolean_equals(java.lang.Object):((domain.Board) board).column => ~((domain.Board) board).column
+LOI_21:99:boolean_equals(java.lang.Object):i => ~i
+LOI_22:99:boolean_equals(java.lang.Object):this.line => ~this.line
+LOI_23:99:boolean_equals(java.lang.Object):i => ~i
+LOI_24:100:boolean_equals(java.lang.Object):j => ~j
+LOI_25:100:boolean_equals(java.lang.Object):this.column => ~this.column
+LOI_26:100:boolean_equals(java.lang.Object):j => ~j
+LOI_27:101:boolean_equals(java.lang.Object):i => ~i
+LOI_28:101:boolean_equals(java.lang.Object):j => ~j
+LOI_29:101:boolean_equals(java.lang.Object):i => ~i
+LOI_30:101:boolean_equals(java.lang.Object):j => ~j
+LOI_31:112:java.lang.String_toString():i => ~i
+LOI_32:112:java.lang.String_toString():this.line => ~this.line
+LOI_33:112:java.lang.String_toString():i => ~i
+LOI_34:113:java.lang.String_toString():j => ~j
+LOI_35:113:java.lang.String_toString():this.column => ~this.column
+LOI_36:113:java.lang.String_toString():j => ~j
+LOI_37:114:java.lang.String_toString():i => ~i
+LOI_38:114:java.lang.String_toString():j => ~j
+LOI_39:115:java.lang.String_toString():i => ~i
+LOI_40:115:java.lang.String_toString():j => ~j
+SDL_1:24:Board(int,int): this.line = line; this.column = column; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();  =>   this.column = column; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();
+SDL_2:24:Board(int,int): this.line = line; this.column = column; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();  =>   this.line = line; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();
+SDL_3:24:Board(int,int): this.line = line; this.column = column; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();  =>   this.line = line; this.column = column; this.initializeAllCells();
+SDL_4:24:Board(int,int): this.line = line; this.column = column; this.grid = new domain.Grid<Cell>( line, column ); this.initializeAllCells();  =>   this.line = line; this.column = column; this.grid = new domain.Grid<Cell>( line, column );
+SDL_5:29:void_initializeAllCells(): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         this.grid.put( i, j, new domain.Cell() );     } }  =>  
+SDL_6:30:void_initializeAllCells(): for (int j = 1; j <= this.column; j++) {     this.grid.put( i, j, new domain.Cell() ); }  =>  
+SDL_7:34:void_initializeAllCells(): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         this.grid.put( i, j, new domain.Cell() );     } }  =>   for (int i = 1;; i++) {     for (int j = 1; j <= this.column; j++) {         this.grid.put( i, j, new domain.Cell() );     } }
+SDL_8:34:void_initializeAllCells(): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         this.grid.put( i, j, new domain.Cell() );     } }  =>   for (int i = 1; i <= this.line;) {     for (int j = 1; j <= this.column; j++) {         this.grid.put( i, j, new domain.Cell() );     } }
+SDL_9:31:void_initializeAllCells(): this.grid.put( i, j, new domain.Cell() );  =>  
+SDL_10:33:void_initializeAllCells(): for (int j = 1; j <= this.column; j++) {     this.grid.put( i, j, new domain.Cell() ); }  =>   for (int j = 1;; j++) {     this.grid.put( i, j, new domain.Cell() ); }
+SDL_11:33:void_initializeAllCells(): for (int j = 1; j <= this.column; j++) {     this.grid.put( i, j, new domain.Cell() ); }  =>   for (int j = 1; j <= this.column;) {     this.grid.put( i, j, new domain.Cell() ); }
+SDL_12:38:void_putTile(domain.Tile,domain.Position): this.grid.get( position.getLine(), position.getColumn() ).putTile( tile );  =>  
+SDL_13:44:domain.Tile_getTile(domain.Position): if (this.isInsideTheBoard( position )) {     return grid.get( position.getLine(), position.getColumn() ).tile; } return null;  =>   return null;
+SDL_14:46:domain.Tile_getTile(domain.Position): if (this.isInsideTheBoard( position )) {     return grid.get( position.getLine(), position.getColumn() ).tile; }  =>   if (true) {     return grid.get( position.getLine(), position.getColumn() ).tile; }
+SDL_15:52:boolean_isAdjacent(domain.Position,domain.Position): return this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1);  =>   return true;
+SDL_16:52:boolean_isAdjacent(domain.Position,domain.Position): return this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1);  =>   return false;
+SDL_17:57:boolean_changeTilesInPositions(domain.Position,domain.Position): if (this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )) {     domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() );     domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() );     domain.Tile aux = cell1.getTile();     cell1.putTile( cell2.getTile() );     cell2.putTile( aux );     return true; } else {     throw new exceptions.ExceptionInvalidPosition(); }  =>  
+SDL_18:63:boolean_changeTilesInPositions(domain.Position,domain.Position): domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() ); domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() ); domain.Tile aux = cell1.getTile(); cell1.putTile( cell2.getTile() ); cell2.putTile( aux ); return true;  =>   domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() ); domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() ); domain.Tile aux = cell1.getTile(); cell2.putTile( aux ); return true;
+SDL_19:63:boolean_changeTilesInPositions(domain.Position,domain.Position): domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() ); domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() ); domain.Tile aux = cell1.getTile(); cell1.putTile( cell2.getTile() ); cell2.putTile( aux ); return true;  =>   domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() ); domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() ); domain.Tile aux = cell1.getTile(); cell1.putTile( cell2.getTile() ); return true;
+SDL_20:67:boolean_changeTilesInPositions(domain.Position,domain.Position): if (this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )) {     domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() );     domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() );     domain.Tile aux = cell1.getTile();     cell1.putTile( cell2.getTile() );     cell2.putTile( aux );     return true; } else {     throw new exceptions.ExceptionInvalidPosition(); }  =>   if (true) {     domain.Cell cell1 = this.grid.get( position1.getLine(), position1.getColumn() );     domain.Cell cell2 = this.grid.get( position2.getLine(), position2.getColumn() );     domain.Tile aux = cell1.getTile();     cell1.putTile( cell2.getTile() );     cell2.putTile( aux );     return true; } else {     throw new exceptions.ExceptionInvalidPosition(); }
+SDL_21:65:boolean_changeTilesInPositions(domain.Position,domain.Position): throw new exceptions.ExceptionInvalidPosition();  =>  
+SDL_22:64:boolean_changeTilesInPositions(domain.Position,domain.Position): return true;  =>   return false;
+SDL_23:72:boolean_isInTheSuperiorBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getLine() == 1;  =>   return true;
+SDL_24:72:boolean_isInTheSuperiorBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getLine() == 1;  =>   return false;
+SDL_25:77:boolean_isInTheBottomBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getLine() == this.line;  =>   return true;
+SDL_26:77:boolean_isInTheBottomBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getLine() == this.line;  =>   return false;
+SDL_27:82:boolean_isInTheLeftBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getColumn() == 1;  =>   return true;
+SDL_28:82:boolean_isInTheLeftBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getColumn() == 1;  =>   return false;
+SDL_29:87:boolean_isInTheRightBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getColumn() == this.column;  =>   return true;
+SDL_30:87:boolean_isInTheRightBorder(domain.Position): return this.isInsideTheBoard( position ) && position.getColumn() == this.column;  =>   return false;
+SDL_31:92:boolean_isInsideTheBoard(domain.Position): return position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column;  =>   return true;
+SDL_32:92:boolean_isInsideTheBoard(domain.Position): return position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column;  =>   return false;
+SDL_33:104:boolean_equals(java.lang.Object): if (this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column) {     return false; } for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } } return true;  =>   for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } } return true;
+SDL_34:100:boolean_equals(java.lang.Object): if (this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column) {     return false; } for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } } return true;  =>   if (this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column) {     return false; } return true;
+SDL_35:99:boolean_equals(java.lang.Object): if (this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column) {     return false; }  =>   if (true) {     return false; }
+SDL_36:98:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_37:100:boolean_equals(java.lang.Object): for (int j = 1; j <= this.column; j++) {     if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {         return false;     } }  =>  
+SDL_38:106:boolean_equals(java.lang.Object): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } }  =>   for (int i = 1;; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } }
+SDL_39:106:boolean_equals(java.lang.Object): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } }  =>   for (int i = 1; i <= this.line;) {     for (int j = 1; j <= this.column; j++) {         if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {             return false;         }     } }
+SDL_40:101:boolean_equals(java.lang.Object): if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {     return false; }  =>  
+SDL_41:105:boolean_equals(java.lang.Object): for (int j = 1; j <= this.column; j++) {     if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {         return false;     } }  =>   for (int j = 1;; j++) {     if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {         return false;     } }
+SDL_42:105:boolean_equals(java.lang.Object): for (int j = 1; j <= this.column; j++) {     if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {         return false;     } }  =>   for (int j = 1; j <= this.column;) {     if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {         return false;     } }
+SDL_43:104:boolean_equals(java.lang.Object): if (!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )) {     return false; }  =>   if (true) {     return false; }
+SDL_44:103:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_45:107:boolean_equals(java.lang.Object): return true;  =>   return false;
+SDL_46:113:java.lang.String_toString(): java.lang.String result = \"\"; for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         domain.Cell cell = grid.get( i, j );         result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";     }     result = result + \"\\n\"; } return result;  =>   java.lang.String result = \"\"; return result;
+SDL_47:114:java.lang.String_toString(): for (int j = 1; j <= this.column; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; } result = result + \"\\n\";  =>   result = result + \"\\n\";
+SDL_48:117:java.lang.String_toString(): for (int j = 1; j <= this.column; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; } result = result + \"\\n\";  =>   for (int j = 1; j <= this.column; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; }
+SDL_49:119:java.lang.String_toString(): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         domain.Cell cell = grid.get( i, j );         result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";     }     result = result + \"\\n\"; }  =>   for (int i = 1;; i++) {     for (int j = 1; j <= this.column; j++) {         domain.Cell cell = grid.get( i, j );         result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";     }     result = result + \"\\n\"; }
+SDL_50:119:java.lang.String_toString(): for (int i = 1; i <= this.line; i++) {     for (int j = 1; j <= this.column; j++) {         domain.Cell cell = grid.get( i, j );         result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";     }     result = result + \"\\n\"; }  =>   for (int i = 1; i <= this.line;) {     for (int j = 1; j <= this.column; j++) {         domain.Cell cell = grid.get( i, j );         result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";     }     result = result + \"\\n\"; }
+SDL_51:115:java.lang.String_toString(): domain.Cell cell = grid.get( i, j ); result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \";  =>   domain.Cell cell = grid.get( i, j );
+SDL_52:117:java.lang.String_toString(): for (int j = 1; j <= this.column; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; }  =>   for (int j = 1;; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; }
+SDL_53:117:java.lang.String_toString(): for (int j = 1; j <= this.column; j++) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; }  =>   for (int j = 1; j <= this.column;) {     domain.Cell cell = grid.get( i, j );     result = result + \"(\" + i + \",\" + j + \")\" + \":\" + cell.toString() + \"   \"; }
+SDL_54:120:java.lang.String_toString(): return result;  =>   return \"\";
+VDL_1:29:void_initializeAllCells():i <= this.line => this.line
+VDL_2:29:void_initializeAllCells():i++ =>  
+VDL_3:30:void_initializeAllCells():j <= this.column => this.column
+VDL_4:30:void_initializeAllCells():j++ =>  
+VDL_5:99:boolean_equals(java.lang.Object):i <= this.line => this.line
+VDL_6:99:boolean_equals(java.lang.Object):i++ =>  
+VDL_7:100:boolean_equals(java.lang.Object):j <= this.column => this.column
+VDL_8:100:boolean_equals(java.lang.Object):j++ =>  
+VDL_9:112:java.lang.String_toString():i <= this.line => this.line
+VDL_10:112:java.lang.String_toString():i++ =>  
+VDL_11:113:java.lang.String_toString():j <= this.column => this.column
+VDL_12:113:java.lang.String_toString():j++ =>  
+VDL_13:115:java.lang.String_toString():result + "(" => "("
+VDL_14:115:java.lang.String_toString():result + "(" + i => result + "("
+VDL_15:115:java.lang.String_toString():result + "(" + i + "," + j => result + "(" + i + ","
+VDL_16:117:java.lang.String_toString():result + "\n" => "\n"
+ODL_1:29:void_initializeAllCells():i <= this.line => i
+ODL_2:29:void_initializeAllCells():i <= this.line => this.line
+ODL_3:29:void_initializeAllCells():i++ => i
+ODL_4:30:void_initializeAllCells():j <= this.column => j
+ODL_5:30:void_initializeAllCells():j <= this.column => this.column
+ODL_6:30:void_initializeAllCells():j++ => j
+ODL_7:51:boolean_isAdjacent(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) => this.isInsideTheBoard( position1 )
+ODL_8:51:boolean_isAdjacent(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) => this.isInsideTheBoard( position2 )
+ODL_9:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() => position1.getLine()
+ODL_10:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() => position2.getLine()
+ODL_11:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position1.getColumn()
+ODL_12:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() - position2.getColumn() => position2.getColumn()
+ODL_13:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getColumn() - position2.getColumn() ) == 1 => Math.abs( position1.getColumn() - position2.getColumn() )
+ODL_14:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getColumn() - position2.getColumn() ) == 1 => 1
+ODL_15:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 => position1.getLine() == position2.getLine()
+ODL_16:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 => Math.abs( position1.getColumn() - position2.getColumn() ) == 1
+ODL_17:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() == position2.getColumn() => position1.getColumn()
+ODL_18:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() == position2.getColumn() => position2.getColumn()
+ODL_19:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position1.getLine()
+ODL_20:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() - position2.getLine() => position2.getLine()
+ODL_21:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getLine() - position2.getLine() ) == 1 => Math.abs( position1.getLine() - position2.getLine() )
+ODL_22:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getLine() - position2.getLine() ) == 1 => 1
+ODL_23:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1 => position1.getColumn() == position2.getColumn()
+ODL_24:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1 => Math.abs( position1.getLine() - position2.getLine() ) == 1
+ODL_25:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1 => position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1
+ODL_26:51:boolean_isAdjacent(domain.Position,domain.Position):position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1 => position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1
+ODL_27:51:boolean_isAdjacent(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1) => this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 )
+ODL_28:51:boolean_isAdjacent(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) && (position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1) => position1.getLine() == position2.getLine() && Math.abs( position1.getColumn() - position2.getColumn() ) == 1 || position1.getColumn() == position2.getColumn() && Math.abs( position1.getLine() - position2.getLine() ) == 1
+ODL_29:57:boolean_changeTilesInPositions(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) => this.isInsideTheBoard( position1 )
+ODL_30:57:boolean_changeTilesInPositions(domain.Position,domain.Position):this.isInsideTheBoard( position1 ) && this.isInsideTheBoard( position2 ) => this.isInsideTheBoard( position2 )
+ODL_31:71:boolean_isInTheSuperiorBorder(domain.Position):position.getLine() == 1 => position.getLine()
+ODL_32:71:boolean_isInTheSuperiorBorder(domain.Position):position.getLine() == 1 => 1
+ODL_33:71:boolean_isInTheSuperiorBorder(domain.Position):this.isInsideTheBoard( position ) && position.getLine() == 1 => this.isInsideTheBoard( position )
+ODL_34:71:boolean_isInTheSuperiorBorder(domain.Position):this.isInsideTheBoard( position ) && position.getLine() == 1 => position.getLine() == 1
+ODL_35:76:boolean_isInTheBottomBorder(domain.Position):position.getLine() == this.line => position.getLine()
+ODL_36:76:boolean_isInTheBottomBorder(domain.Position):position.getLine() == this.line => this.line
+ODL_37:76:boolean_isInTheBottomBorder(domain.Position):this.isInsideTheBoard( position ) && position.getLine() == this.line => this.isInsideTheBoard( position )
+ODL_38:76:boolean_isInTheBottomBorder(domain.Position):this.isInsideTheBoard( position ) && position.getLine() == this.line => position.getLine() == this.line
+ODL_39:81:boolean_isInTheLeftBorder(domain.Position):position.getColumn() == 1 => position.getColumn()
+ODL_40:81:boolean_isInTheLeftBorder(domain.Position):position.getColumn() == 1 => 1
+ODL_41:81:boolean_isInTheLeftBorder(domain.Position):this.isInsideTheBoard( position ) && position.getColumn() == 1 => this.isInsideTheBoard( position )
+ODL_42:81:boolean_isInTheLeftBorder(domain.Position):this.isInsideTheBoard( position ) && position.getColumn() == 1 => position.getColumn() == 1
+ODL_43:86:boolean_isInTheRightBorder(domain.Position):position.getColumn() == this.column => position.getColumn()
+ODL_44:86:boolean_isInTheRightBorder(domain.Position):position.getColumn() == this.column => this.column
+ODL_45:86:boolean_isInTheRightBorder(domain.Position):this.isInsideTheBoard( position ) && position.getColumn() == this.column => this.isInsideTheBoard( position )
+ODL_46:86:boolean_isInTheRightBorder(domain.Position):this.isInsideTheBoard( position ) && position.getColumn() == this.column => position.getColumn() == this.column
+ODL_47:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 => position.getLine()
+ODL_48:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 => 0
+ODL_49:91:boolean_isInsideTheBoard(domain.Position):position.getLine() <= this.line => position.getLine()
+ODL_50:91:boolean_isInsideTheBoard(domain.Position):position.getLine() <= this.line => this.line
+ODL_51:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line => position.getLine() > 0
+ODL_52:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line => position.getLine() <= this.line
+ODL_53:91:boolean_isInsideTheBoard(domain.Position):position.getColumn() > 0 => position.getColumn()
+ODL_54:91:boolean_isInsideTheBoard(domain.Position):position.getColumn() > 0 => 0
+ODL_55:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 => position.getLine() > 0 && position.getLine() <= this.line
+ODL_56:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 => position.getColumn() > 0
+ODL_57:91:boolean_isInsideTheBoard(domain.Position):position.getColumn() <= this.column => position.getColumn()
+ODL_58:91:boolean_isInsideTheBoard(domain.Position):position.getColumn() <= this.column => this.column
+ODL_59:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column => position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0
+ODL_60:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 && position.getLine() <= this.line && position.getColumn() > 0 && position.getColumn() <= this.column => position.getColumn() <= this.column
+ODL_61:96:boolean_equals(java.lang.Object):this.line != ((domain.Board) board).line => this.line
+ODL_62:96:boolean_equals(java.lang.Object):this.line != ((domain.Board) board).line => ((domain.Board) board).line
+ODL_63:96:boolean_equals(java.lang.Object):this.column != ((domain.Board) board).column => this.column
+ODL_64:96:boolean_equals(java.lang.Object):this.column != ((domain.Board) board).column => ((domain.Board) board).column
+ODL_65:96:boolean_equals(java.lang.Object):this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column => this.line != ((domain.Board) board).line
+ODL_66:96:boolean_equals(java.lang.Object):this.line != ((domain.Board) board).line || this.column != ((domain.Board) board).column => this.column != ((domain.Board) board).column
+ODL_67:99:boolean_equals(java.lang.Object):i <= this.line => i
+ODL_68:99:boolean_equals(java.lang.Object):i <= this.line => this.line
+ODL_69:99:boolean_equals(java.lang.Object):i++ => i
+ODL_70:100:boolean_equals(java.lang.Object):j <= this.column => j
+ODL_71:100:boolean_equals(java.lang.Object):j <= this.column => this.column
+ODL_72:100:boolean_equals(java.lang.Object):j++ => j
+ODL_73:101:boolean_equals(java.lang.Object):!this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) ) => this.grid.get( i, j ).equals( ((domain.Board) board).grid.get( i, j ) )
+ODL_74:112:java.lang.String_toString():i <= this.line => i
+ODL_75:112:java.lang.String_toString():i <= this.line => this.line
+ODL_76:112:java.lang.String_toString():i++ => i
+ODL_77:113:java.lang.String_toString():j <= this.column => j
+ODL_78:113:java.lang.String_toString():j <= this.column => this.column
+ODL_79:113:java.lang.String_toString():j++ => j
+ODL_80:115:java.lang.String_toString():result + "(" => result
+ODL_81:115:java.lang.String_toString():result + "(" => "("
+ODL_82:115:java.lang.String_toString():result + "(" + i => result + "("
+ODL_83:115:java.lang.String_toString():result + "(" + i => i
+ODL_84:115:java.lang.String_toString():result + "(" + i + "," => result + "(" + i
+ODL_85:115:java.lang.String_toString():result + "(" + i + "," => ","
+ODL_86:115:java.lang.String_toString():result + "(" + i + "," + j => result + "(" + i + ","
+ODL_87:115:java.lang.String_toString():result + "(" + i + "," + j => j
+ODL_88:115:java.lang.String_toString():result + "(" + i + "," + j + ")" => result + "(" + i + "," + j
+ODL_89:115:java.lang.String_toString():result + "(" + i + "," + j + ")" => ")"
+ODL_90:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" => result + "(" + i + "," + j + ")"
+ODL_91:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" => ":"
+ODL_92:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" + cell.toString() => result + "(" + i + "," + j + ")" + ":"
+ODL_93:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" + cell.toString() => cell.toString()
+ODL_94:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" + cell.toString() + "   " => result + "(" + i + "," + j + ")" + ":" + cell.toString()
+ODL_95:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" + cell.toString() + "   " => "   "
+ODL_96:117:java.lang.String_toString():result + "\n" => result
+ODL_97:117:java.lang.String_toString():result + "\n" => "\n"
+CDL_1:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getColumn() - position2.getColumn() ) == 1 => Math.abs( position1.getColumn() - position2.getColumn() )
+CDL_2:51:boolean_isAdjacent(domain.Position,domain.Position):Math.abs( position1.getLine() - position2.getLine() ) == 1 => Math.abs( position1.getLine() - position2.getLine() )
+CDL_3:71:boolean_isInTheSuperiorBorder(domain.Position):position.getLine() == 1 => position.getLine()
+CDL_4:81:boolean_isInTheLeftBorder(domain.Position):position.getColumn() == 1 => position.getColumn()
+CDL_5:91:boolean_isInsideTheBoard(domain.Position):position.getLine() > 0 => position.getLine()
+CDL_6:91:boolean_isInsideTheBoard(domain.Position):position.getColumn() > 0 => position.getColumn()
+CDL_7:115:java.lang.String_toString():result + "(" => result
+CDL_8:115:java.lang.String_toString():result + "(" + i + "," => result + "(" + i
+CDL_9:115:java.lang.String_toString():result + "(" + i + "," + j + ")" => result + "(" + i + "," + j
+CDL_10:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" => result + "(" + i + "," + j + ")"
+CDL_11:115:java.lang.String_toString():result + "(" + i + "," + j + ")" + ":" + cell.toString() + "   " => result + "(" + i + "," + j + ")" + ":" + cell.toString()
+CDL_12:117:java.lang.String_toString():result + "\n" => result

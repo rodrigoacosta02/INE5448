@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/EightPuzzleGameTest.moveLeftTest()V",
+  "modified_states": "4",
+  "covered_states": "2",
+  "useless_covered_states": "1",
+  "modified":  [ "domain/Position.column", "domain/Position.line", "domain/Cell.tile", "domain/PuzzleGame.emptyCell" ],
+  "covered":  [ "domain/Position.column", "domain/PuzzleGame.emptyCell" ],
+  "useless":  [ "domain/EightPuzzleGameTest.pg" ],
+  "state_coverage": "0.5"
+}

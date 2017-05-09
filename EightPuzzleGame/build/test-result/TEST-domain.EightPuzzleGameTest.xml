@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="ine" name="domain.EightPuzzleGameTest" skipped="0" tests="6" time="0.079" timestamp="2017-05-09T11:31:14">
+  <properties>
+    <property name="ant.project.invoked-targets" value="pit" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="java.vm.version" value="25.121-b13" />
+    <property name="ant.library.dir" value="/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="BR" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/media/12104064/6559-AC7F/workspace/EightPuzzleGame" />
+    <property name="java.runtime.version" value="1.8.0_121-8u121-b13-0ubuntu1.16.04.2-b13" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="basedir" value="/media/12104064/6559-AC7F/workspace/EightPuzzleGame" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="ant.core.lib" value="/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.file.pit-ant-example" value="/media/12104064/6559-AC7F/workspace/EightPuzzleGame/build.xml" />
+    <property name="os.name" value="Linux" />
+    <property name="ant.home" value="/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327" />
+    <property name="ant.file.type.pit-ant-example" value="file" />
+    <property name="ant.project.name" value="pit-ant-example" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib:/home/100000000243152/Documentos/eclipse/configuration/org.eclipse.osgi/387/0/.cp" />
+    <property name="classOutputDir" value="build" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="4.4.0-31-generic" />
+    <property name="ant.file" value="/media/12104064/6559-AC7F/workspace/EightPuzzleGame/build.xml" />
+    <property name="user.home" value="/home/100000000243152" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="file.encoding" value="ISO-8859-1" />
+    <property name="user.name" value="12104064" />
+    <property name="java.class.path" value="/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-antlr.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-bcel.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-bsf.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-log4j.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-oro.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-regexp.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-resolver.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-xalan2.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-commons-logging.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-commons-net.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jai.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-javamail.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jdepend.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jmf.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jsch.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-netrexx.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-swing.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-testutil.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/home/100000000243152/Documentos/eclipse/configuration/org.eclipse.osgi/61/0/.cp/lib/antdebug.jar:/home/100000000243152/Documentos/eclipse/configuration/org.eclipse.osgi/61/0/.cp/lib/remote.jar:/home/100000000243152/Documentos/eclipse/configuration/org.eclipse.osgi/62/0/.cp/lib/remoteAnt.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar:/home/100000000243152/Documentos/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.105.2.v20161122-0613.jar" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.java.command" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1494329470413 -Declipse.connect.port=46400 -Dant.home=/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile /media/12104064/6559-AC7F/workspace/EightPuzzleGame/build.xml pit" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="pt" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.8.0_121" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="domain.EightPuzzleGameTest" name="moveDownTest" time="0.014" />
+  <testcase classname="domain.EightPuzzleGameTest" name="moveLeftTest" time="0.001" />
+  <testcase classname="domain.EightPuzzleGameTest" name="moveRightTest" time="0.002" />
+  <testcase classname="domain.EightPuzzleGameTest" name="moveNullTest" time="0.002" />
+  <testcase classname="domain.EightPuzzleGameTest" name="putTilesInTheBoard" time="0.003" />
+  <testcase classname="domain.EightPuzzleGameTest" name="moveUpTest" time="0.002" />
+  <system-out><![CDATA[
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

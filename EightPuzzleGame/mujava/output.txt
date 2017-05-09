@@ -1,0 +1,363 @@
+domain.EightPuzzleGameTest
+
+
+======================================== Generating Original Test Results ========================================
+
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+
+
+======================================== Executing Mutants ========================================
+  JSI_1
+Inicio do teste -> moveDownTest
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: ; Expected non-static field domain.Cell.tile, moveUpTest=moveUpTest: ; Expected non-static field domain.Cell.tile, moveRightTest=moveRightTest: ; Expected non-static field domain.Cell.tile, moveLeftTest=moveLeftTest: ; Expected non-static field domain.Cell.tile, moveDownTest=moveDownTest: ; Expected non-static field domain.Cell.tile, moveNullTest=moveNullTest: ; Expected non-static field domain.Cell.tile}
+  JTD_1
+Inicio do teste -> moveDownTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<null> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  JTI_1
+Inicio do teste -> moveDownTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<null> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  IOD_1
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  IOD_2
+Inicio do teste -> moveDownTest
+(1,1):domain.Cell@243ad2ea   (1,2):domain.Cell@200552b5   (1,3):domain.Cell@6507d8d1   
+(2,1):domain.Cell@2677f6a5   (2,2):domain.Cell@5428dd03   (2,3):domain.Cell@5eb2adc9   
+(3,1):domain.Cell@528279e   (3,2):domain.Cell@1c732b40   (3,3):domain.Cell@e212d08   
+
+(1,1):domain.Cell@243ad2ea   (1,2):domain.Cell@200552b5   (1,3):domain.Cell@6507d8d1   
+(2,1):domain.Cell@2677f6a5   (2,2):domain.Cell@5428dd03   (2,3):domain.Cell@5eb2adc9   
+(3,1):domain.Cell@528279e   (3,2):domain.Cell@1c732b40   (3,3):domain.Cell@e212d08   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):domain.Cell@45b605e0   (1,2):domain.Cell@166de1f   (1,3):domain.Cell@4cadc58   
+(2,1):domain.Cell@304e8a4   (2,2):domain.Cell@76e87421   (2,3):domain.Cell@4149cac5   
+(3,1):domain.Cell@13b3f6a8   (3,2):domain.Cell@37d66db2   (3,3):domain.Cell@2aa4e15   
+
+(1,1):domain.Cell@45b605e0   (1,2):domain.Cell@166de1f   (1,3):domain.Cell@4cadc58   
+(2,1):domain.Cell@304e8a4   (2,2):domain.Cell@76e87421   (2,3):domain.Cell@4149cac5   
+(3,1):domain.Cell@13b3f6a8   (3,2):domain.Cell@37d66db2   (3,3):domain.Cell@2aa4e15   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):domain.Cell@dbaa367   (1,2):domain.Cell@1b002ce   (1,3):domain.Cell@50f54b7   
+(2,1):domain.Cell@550578e5   (2,2):domain.Cell@dfc48b9   (2,3):domain.Cell@c5b9dba   
+(3,1):domain.Cell@730eda6a   (3,2):domain.Cell@db256be   (3,3):domain.Cell@62e47e31   
+
+(1,1):domain.Cell@dbaa367   (1,2):domain.Cell@1b002ce   (1,3):domain.Cell@50f54b7   
+(2,1):domain.Cell@550578e5   (2,2):domain.Cell@dfc48b9   (2,3):domain.Cell@c5b9dba   
+(3,1):domain.Cell@730eda6a   (3,2):domain.Cell@db256be   (3,3):domain.Cell@62e47e31   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):domain.Cell@3282899a   (1,2):domain.Cell@37dac82a   (1,3):domain.Cell@28c26fc9   
+(2,1):domain.Cell@69968916   (2,2):domain.Cell@4ffe13e7   (2,3):domain.Cell@2e8409aa   
+(3,1):domain.Cell@15039794   (3,2):domain.Cell@4800721b   (3,3):domain.Cell@775e21d7   
+
+(1,1):domain.Cell@3282899a   (1,2):domain.Cell@37dac82a   (1,3):domain.Cell@28c26fc9   
+(2,1):domain.Cell@69968916   (2,2):domain.Cell@4ffe13e7   (2,3):domain.Cell@2e8409aa   
+(3,1):domain.Cell@15039794   (3,2):domain.Cell@4800721b   (3,3):domain.Cell@775e21d7   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):domain.Cell@7999afcf   (1,2):domain.Cell@702f385f   (1,3):domain.Cell@3b741ceb   
+(2,1):domain.Cell@3d22d2cb   (2,2):domain.Cell@9f1e577   (2,3):domain.Cell@95c9d6   
+(3,1):domain.Cell@1b9d0e6b   (3,2):domain.Cell@30023359   (3,3):domain.Cell@365eb273   
+
+(1,1):domain.Cell@7999afcf   (1,2):domain.Cell@702f385f   (1,3):domain.Cell@3b741ceb   
+(2,1):domain.Cell@3d22d2cb   (2,2):domain.Cell@9f1e577   (2,3):domain.Cell@95c9d6   
+(3,1):domain.Cell@1b9d0e6b   (3,2):domain.Cell@30023359   (3,3):domain.Cell@365eb273   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):domain.Cell@18ab0617   (1,2):domain.Cell@6bb6ad3f   (1,3):domain.Cell@4a0fc3eb   
+(2,1):domain.Cell@9812df3   (2,2):domain.Cell@49da096a   (2,3):domain.Cell@17db9a3b   
+(3,1):domain.Cell@23ff13b0   (3,2):domain.Cell@23114c89   (3,3):domain.Cell@3a9980d8   
+
+(1,1):domain.Cell@18ab0617   (1,2):domain.Cell@6bb6ad3f   (1,3):domain.Cell@4a0fc3eb   
+(2,1):domain.Cell@9812df3   (2,2):domain.Cell@49da096a   (2,3):domain.Cell@17db9a3b   
+(3,1):domain.Cell@23ff13b0   (3,2):domain.Cell@23114c89   (3,3):domain.Cell@3a9980d8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+test report: {putTilesInTheBoard=JSI_1, JTD_1, JTI_1, moveUpTest=JSI_1, moveRightTest=JSI_1, moveLeftTest=JSI_1, moveDownTest=JSI_1, moveNullTest=JSI_1}
+mutant report: {JTD_1=putTilesInTheBoard, IOD_2=, IOD_1=, JSI_1=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, JTI_1=putTilesInTheBoard}
