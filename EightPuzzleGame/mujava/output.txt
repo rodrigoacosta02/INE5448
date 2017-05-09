@@ -6,11 +6,425 @@ domain.EightPuzzleGameTest
 Inicio do teste -> moveDownTest
 (1,1):1   (1,2):2   (1,3):3   
 (2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
 (3,1):7   (3,2):8   (3,3):   
 
 (1,1):1   (1,2):2   (1,3):3   
 (2,1):4   (2,2):5   (2,3):6   
 (3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):5   (1,3):2   
+(2,1):4   (2,2):   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):5   (1,3):2   
+(2,1):4   (2,2):   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+
+
+======================================== Executing Mutants ========================================
+  JSI_1
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  JSI_2
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  JSI_3
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):4   (2,3):6   
+(3,1):   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):4   (2,3):6   
+(3,1):   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):6   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):6   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  JTD_1
+Inicio do teste -> moveDownTest
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: ; fail, moveUpTest=moveUpTest: ; fail, moveRightTest=moveRightTest: ; fail, moveLeftTest=moveLeftTest: ; fail, moveDownTest=moveDownTest: ; fail, moveNullTest=moveNullTest: ; fail}
+  JTD_2
+Inicio do teste -> moveDownTest
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: ; fail, moveUpTest=moveUpTest: ; fail, moveRightTest=moveRightTest: ; fail, moveLeftTest=moveLeftTest: ; fail, moveDownTest=moveDownTest: ; fail, moveNullTest=moveNullTest: ; fail}
+  JTI_1
+Inicio do teste -> moveDownTest
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: ; fail, moveUpTest=moveUpTest: ; fail, moveRightTest=moveRightTest: ; fail, moveLeftTest=moveLeftTest: ; fail, moveDownTest=moveDownTest: ; fail, moveNullTest=moveNullTest: ; fail}
+  JTI_2
+Inicio do teste -> moveDownTest
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: ; fail, moveUpTest=moveUpTest: ; fail, moveRightTest=moveRightTest: ; fail, moveLeftTest=moveLeftTest: ; fail, moveDownTest=moveDownTest: ; fail, moveNullTest=moveNullTest: ; fail}
+  JTI_3
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  JTI_4
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
 
 Fim do teste 	-> moveDownTest
 
@@ -26,24 +440,24 @@ Inicio do teste -> moveUpTest
 Fim do teste 	-> moveUpTest
 
 Inicio do teste -> moveLeftTest
-(1,1):1   (1,2):3   (1,3):   
-(2,1):4   (2,2):2   (2,3):5   
-(3,1):7   (3,2):8   (3,3):6   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
 
-(1,1):1   (1,2):   (1,3):3   
-(2,1):4   (2,2):2   (2,3):5   
-(3,1):7   (3,2):8   (3,3):6   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
 
 Fim do teste 	-> moveLeftTest
 
 Inicio do teste -> moveRightTest
-(1,1):1   (1,2):2   (1,3):3   
-(2,1):4   (2,2):5   (2,3):6   
-(3,1):7   (3,2):8   (3,3):   
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
 
-(1,1):1   (1,2):2   (1,3):3   
-(2,1):4   (2,2):5   (2,3):6   
-(3,1):7   (3,2):8   (3,3):   
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveRightTest
 
@@ -55,6 +469,408 @@ Inicio do teste -> moveNullTest
 (1,1):1   (1,2):2   (1,3):3   
 (2,1):4   (2,2):5   (2,3):6   
 (3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_1
+Inicio do teste -> moveDownTest
+(1,1):6   (1,2):7   (1,3):   
+(2,1):   (2,2):8   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):7   (1,3):   
+(2,1):6   (2,2):8   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):8   (3,3):   
+
+(1,1):7   (1,2):6   (1,3):   
+(2,1):   (2,2):   (2,3):   
+(3,1):   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):7   (1,2):   (1,3):   
+(2,1):8   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):7   (1,2):   (1,3):   
+(2,1):6   (2,2):8   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):8   (2,3):   
+(3,1):   (3,2):   (3,3):6   
+
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):8   (2,3):   
+(3,1):   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):8   (3,3):   
+
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):7   (1,2):   (1,3):   
+(2,1):   (2,2):8   (2,3):   
+(3,1):6   (3,2):   (3,3):   
+
+(1,1):16   (1,2):   (1,3):   
+(2,1):   (2,2):17   (2,3):   
+(3,1):6   (3,2):   (3,3):15   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<16> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_2
+Inicio do teste -> moveDownTest
+(1,1):3   (1,2):   (1,3):8   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):8   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):8   
+
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):8   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):8   (1,2):3   (1,3):   
+(2,1):   (2,2):   (2,3):6   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):8   (1,2):3   (1,3):   
+(2,1):   (2,2):   (2,3):6   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):8   (1,2):   (1,3):   
+(2,1):3   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+(1,1):   (1,2):8   (1,3):   
+(2,1):3   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):8   
+
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):3   (1,2):   (1,3):   
+(2,1):   (2,2):6   (2,3):   
+(3,1):8   (3,2):   (3,3):   
+
+(1,1):12   (1,2):   (1,3):   
+(2,1):   (2,2):15   (2,3):   
+(3,1):8   (3,2):   (3,3):17   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<12> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_3
+Inicio do teste -> moveDownTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):5   (1,3):2   
+(2,1):4   (2,2):   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):5   (1,3):2   
+(2,1):   (2,2):4   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<14> but was:<11>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_4
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<10> but was:<11>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_5
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_6
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):6   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
 
 Fim do teste 	-> moveNullTest
 
@@ -69,163 +885,7 @@ Inicio do teste -> putTilesInTheBoard
 
 Fim do teste 	-> putTilesInTheBoard
 {putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
-
-
-======================================== Executing Mutants ========================================
-  JSI_1
-Inicio do teste -> moveDownTest
-Fim do teste 	-> moveDownTest
-
-Inicio do teste -> moveUpTest
-Fim do teste 	-> moveUpTest
-
-Inicio do teste -> moveLeftTest
-Fim do teste 	-> moveLeftTest
-
-Inicio do teste -> moveRightTest
-Fim do teste 	-> moveRightTest
-
-Inicio do teste -> moveNullTest
-Fim do teste 	-> moveNullTest
-
-Inicio do teste -> putTilesInTheBoard
-Fim do teste 	-> putTilesInTheBoard
-{putTilesInTheBoard=putTilesInTheBoard: ; Expected non-static field domain.Cell.tile, moveUpTest=moveUpTest: ; Expected non-static field domain.Cell.tile, moveRightTest=moveRightTest: ; Expected non-static field domain.Cell.tile, moveLeftTest=moveLeftTest: ; Expected non-static field domain.Cell.tile, moveDownTest=moveDownTest: ; Expected non-static field domain.Cell.tile, moveNullTest=moveNullTest: ; Expected non-static field domain.Cell.tile}
-  JTD_1
-Inicio do teste -> moveDownTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveDownTest
-
-Inicio do teste -> moveUpTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveUpTest
-
-Inicio do teste -> moveLeftTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveLeftTest
-
-Inicio do teste -> moveRightTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveRightTest
-
-Inicio do teste -> moveNullTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveNullTest
-
-Inicio do teste -> putTilesInTheBoard
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> putTilesInTheBoard
-{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<null> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
-  JTI_1
-Inicio do teste -> moveDownTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveDownTest
-
-Inicio do teste -> moveUpTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveUpTest
-
-Inicio do teste -> moveLeftTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveLeftTest
-
-Inicio do teste -> moveRightTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveRightTest
-
-Inicio do teste -> moveNullTest
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> moveNullTest
-
-Inicio do teste -> putTilesInTheBoard
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-(1,1):   (1,2):   (1,3):   
-(2,1):   (2,2):   (2,3):   
-(3,1):   (3,2):   (3,3):   
-
-Fim do teste 	-> putTilesInTheBoard
-{putTilesInTheBoard=putTilesInTheBoard: 	at domain.EightPuzzleGameTest.putTilesInTheBoard(Unknown Source; expected:<null> but was:<10>, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
-  IOD_1
+  EAM_7
 Inicio do teste -> moveDownTest
 (1,1):1   (1,2):2   (1,3):3   
 (2,1):4   (2,2):   (2,3):6   
@@ -260,30 +920,97 @@ Inicio do teste -> moveLeftTest
 Fim do teste 	-> moveLeftTest
 
 Inicio do teste -> moveRightTest
-(1,1):1   (1,2):3   (1,3):   
-(2,1):4   (2,2):2   (2,3):5   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
 (3,1):7   (3,2):8   (3,3):6   
 
-(1,1):1   (1,2):3   (1,3):   
-(2,1):4   (2,2):2   (2,3):5   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
 (3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveRightTest
 
 Inicio do teste -> moveNullTest
-(1,1):1   (1,2):2   (1,3):3   
-(2,1):4   (2,2):6   (2,3):8   
-(3,1):7   (3,2):5   (3,3):   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
-(1,1):1   (1,2):2   (1,3):3   
-(2,1):4   (2,2):6   (2,3):8   
-(3,1):7   (3,2):5   (3,3):   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveNullTest
 
 Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):6   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_8
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):6   
+(3,1):4   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
 (1,1):1   (1,2):2   (1,3):   
 (2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
 (3,1):7   (3,2):8   (3,3):6   
 
 (1,1):10   (1,2):11   (1,3):12   
@@ -292,72 +1019,1254 @@ Inicio do teste -> putTilesInTheBoard
 
 Fim do teste 	-> putTilesInTheBoard
 {putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
-  IOD_2
+  EAM_9
 Inicio do teste -> moveDownTest
-(1,1):domain.Cell@243ad2ea   (1,2):domain.Cell@200552b5   (1,3):domain.Cell@6507d8d1   
-(2,1):domain.Cell@2677f6a5   (2,2):domain.Cell@5428dd03   (2,3):domain.Cell@5eb2adc9   
-(3,1):domain.Cell@528279e   (3,2):domain.Cell@1c732b40   (3,3):domain.Cell@e212d08   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
 
-(1,1):domain.Cell@243ad2ea   (1,2):domain.Cell@200552b5   (1,3):domain.Cell@6507d8d1   
-(2,1):domain.Cell@2677f6a5   (2,2):domain.Cell@5428dd03   (2,3):domain.Cell@5eb2adc9   
-(3,1):domain.Cell@528279e   (3,2):domain.Cell@1c732b40   (3,3):domain.Cell@e212d08   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
 
 Fim do teste 	-> moveDownTest
 
 Inicio do teste -> moveUpTest
-(1,1):domain.Cell@45b605e0   (1,2):domain.Cell@166de1f   (1,3):domain.Cell@4cadc58   
-(2,1):domain.Cell@304e8a4   (2,2):domain.Cell@76e87421   (2,3):domain.Cell@4149cac5   
-(3,1):domain.Cell@13b3f6a8   (3,2):domain.Cell@37d66db2   (3,3):domain.Cell@2aa4e15   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
-(1,1):domain.Cell@45b605e0   (1,2):domain.Cell@166de1f   (1,3):domain.Cell@4cadc58   
-(2,1):domain.Cell@304e8a4   (2,2):domain.Cell@76e87421   (2,3):domain.Cell@4149cac5   
-(3,1):domain.Cell@13b3f6a8   (3,2):domain.Cell@37d66db2   (3,3):domain.Cell@2aa4e15   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveUpTest
 
 Inicio do teste -> moveLeftTest
-(1,1):domain.Cell@dbaa367   (1,2):domain.Cell@1b002ce   (1,3):domain.Cell@50f54b7   
-(2,1):domain.Cell@550578e5   (2,2):domain.Cell@dfc48b9   (2,3):domain.Cell@c5b9dba   
-(3,1):domain.Cell@730eda6a   (3,2):domain.Cell@db256be   (3,3):domain.Cell@62e47e31   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
 
-(1,1):domain.Cell@dbaa367   (1,2):domain.Cell@1b002ce   (1,3):domain.Cell@50f54b7   
-(2,1):domain.Cell@550578e5   (2,2):domain.Cell@dfc48b9   (2,3):domain.Cell@c5b9dba   
-(3,1):domain.Cell@730eda6a   (3,2):domain.Cell@db256be   (3,3):domain.Cell@62e47e31   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
 
 Fim do teste 	-> moveLeftTest
 
 Inicio do teste -> moveRightTest
-(1,1):domain.Cell@3282899a   (1,2):domain.Cell@37dac82a   (1,3):domain.Cell@28c26fc9   
-(2,1):domain.Cell@69968916   (2,2):domain.Cell@4ffe13e7   (2,3):domain.Cell@2e8409aa   
-(3,1):domain.Cell@15039794   (3,2):domain.Cell@4800721b   (3,3):domain.Cell@775e21d7   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
-(1,1):domain.Cell@3282899a   (1,2):domain.Cell@37dac82a   (1,3):domain.Cell@28c26fc9   
-(2,1):domain.Cell@69968916   (2,2):domain.Cell@4ffe13e7   (2,3):domain.Cell@2e8409aa   
-(3,1):domain.Cell@15039794   (3,2):domain.Cell@4800721b   (3,3):domain.Cell@775e21d7   
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveRightTest
 
 Inicio do teste -> moveNullTest
-(1,1):domain.Cell@7999afcf   (1,2):domain.Cell@702f385f   (1,3):domain.Cell@3b741ceb   
-(2,1):domain.Cell@3d22d2cb   (2,2):domain.Cell@9f1e577   (2,3):domain.Cell@95c9d6   
-(3,1):domain.Cell@1b9d0e6b   (3,2):domain.Cell@30023359   (3,3):domain.Cell@365eb273   
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
-(1,1):domain.Cell@7999afcf   (1,2):domain.Cell@702f385f   (1,3):domain.Cell@3b741ceb   
-(2,1):domain.Cell@3d22d2cb   (2,2):domain.Cell@9f1e577   (2,3):domain.Cell@95c9d6   
-(3,1):domain.Cell@1b9d0e6b   (3,2):domain.Cell@30023359   (3,3):domain.Cell@365eb273   
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
 
 Fim do teste 	-> moveNullTest
 
 Inicio do teste -> putTilesInTheBoard
-(1,1):domain.Cell@18ab0617   (1,2):domain.Cell@6bb6ad3f   (1,3):domain.Cell@4a0fc3eb   
-(2,1):domain.Cell@9812df3   (2,2):domain.Cell@49da096a   (2,3):domain.Cell@17db9a3b   
-(3,1):domain.Cell@23ff13b0   (3,2):domain.Cell@23114c89   (3,3):domain.Cell@3a9980d8   
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
 
-(1,1):domain.Cell@18ab0617   (1,2):domain.Cell@6bb6ad3f   (1,3):domain.Cell@4a0fc3eb   
-(2,1):domain.Cell@9812df3   (2,2):domain.Cell@49da096a   (2,3):domain.Cell@17db9a3b   
-(3,1):domain.Cell@23ff13b0   (3,2):domain.Cell@23114c89   (3,3):domain.Cell@3a9980d8   
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
 
 Fim do teste 	-> putTilesInTheBoard
 {putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
-test report: {putTilesInTheBoard=JSI_1, JTD_1, JTI_1, moveUpTest=JSI_1, moveRightTest=JSI_1, moveLeftTest=JSI_1, moveDownTest=JSI_1, moveNullTest=JSI_1}
-mutant report: {JTD_1=putTilesInTheBoard, IOD_2=, IOD_1=, JSI_1=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, JTI_1=putTilesInTheBoard}
+  EAM_10
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):   (3,2):7   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):   (3,2):7   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_11
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):4   (2,3):6   
+(3,1):   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):4   (2,3):6   
+(3,1):   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_12
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):6   
+(3,1):4   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_13
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):3   (1,3):5   
+(2,1):4   (2,2):2   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):3   (1,3):5   
+(2,1):4   (2,2):2   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):8   (1,2):2   (1,3):3   
+(2,1):4   (2,2):7   (2,3):6   
+(3,1):   (3,2):5   (3,3):1   
+
+(1,1):8   (1,2):2   (1,3):3   
+(2,1):4   (2,2):7   (2,3):6   
+(3,1):   (3,2):5   (3,3):1   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):6   
+(3,1):7   (3,2):1   (3,3):5   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):6   
+(3,1):7   (3,2):1   (3,3):5   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):8   
+(3,1):7   (3,2):5   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):8   
+(3,1):7   (3,2):5   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):6   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_14
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):   (3,3):5   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):8   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):   (3,3):5   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):   (3,3):5   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):2   (1,2):3   (1,3):6   
+(2,1):4   (2,2):   (2,3):1   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):2   (1,2):3   (1,3):6   
+(2,1):4   (2,2):   (2,3):1   
+(3,1):7   (3,2):8   (3,3):5   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):2   (1,2):3   (1,3):6   
+(2,1):4   (2,2):   (2,3):1   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):2   (1,2):3   (1,3):6   
+(2,1):4   (2,2):   (2,3):1   
+(3,1):7   (3,2):8   (3,3):5   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):2   (1,2):3   (1,3):6   
+(2,1):4   (2,2):   (2,3):1   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):5   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_15
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):6   (1,3):3   
+(2,1):4   (2,2):2   (2,3):   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):1   (1,2):6   (1,3):3   
+(2,1):4   (2,2):8   (2,3):   
+(3,1):7   (3,2):2   (3,3):5   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):2   (1,2):6   (1,3):3   
+(2,1):4   (2,2):1   (2,3):   
+(3,1):7   (3,2):8   (3,3):5   
+
+(1,1):2   (1,2):6   (1,3):3   
+(2,1):4   (2,2):1   (2,3):   
+(3,1):7   (3,2):8   (3,3):5   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):3   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):3   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):1   (3,3):8   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):1   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):   
+(3,1):7   (3,2):6   (3,3):5   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):5   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_16
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):   
+(3,1):4   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):   
+(3,1):4   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):2   (1,2):5   (1,3):3   
+(2,1):4   (2,2):1   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):2   (1,2):1   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):8   (2,3):6   
+(3,1):5   (3,2):   (3,3):4   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):7   (2,2):8   (2,3):6   
+(3,1):5   (3,2):   (3,3):4   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):4   (1,2):2   (1,3):3   
+(2,1):5   (2,2):1   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):2   (1,2):4   (1,3):3   
+(2,1):5   (2,2):1   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):5   (1,2):2   (1,3):3   
+(2,1):7   (2,2):1   (2,3):6   
+(3,1):8   (3,2):   (3,3):4   
+
+(1,1):5   (1,2):2   (1,3):3   
+(2,1):7   (2,2):1   (2,3):6   
+(3,1):8   (3,2):   (3,3):4   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):8   (3,3):7   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):7   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_17
+Inicio do teste -> moveDownTest
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):4   (1,2):1   (1,3):3   
+(2,1):   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_18
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):6   
+(3,1):4   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):6   (2,3):3   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):6   (2,3):3   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):   (1,2):1   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=moveLeftTest: 	at domain.EightPuzzleGameTest.moveLeftTest(Unknown Source; expected:<1> but was:<-1>, moveDownTest=pass, moveNullTest=pass}
+  EAM_19
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):   (3,2):7   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=moveLeftTest: 	at domain.EightPuzzleGameTest.moveLeftTest(Unknown Source; expected:<2> but was:<3>, moveDownTest=pass, moveNullTest=pass}
+  EAM_20
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):6   
+(3,1):4   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):   (1,2):1   (1,3):3   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_21
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):3   
+(2,1):4   (2,2):2   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_22
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):3   (1,3):6   
+(2,1):4   (2,2):2   (2,3):   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):6   (2,3):3   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):6   (2,3):3   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):   (3,2):7   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):   (3,2):7   (3,3):6   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_23
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):5   (2,2):7   (2,3):6   
+(3,1):4   (3,2):   (3,3):8   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  EAM_24
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+(1,1):1   (1,2):3   (1,3):   
+(2,1):4   (2,2):2   (2,3):6   
+(3,1):7   (3,2):5   (3,3):8   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):   (2,2):4   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):6   (2,3):8   
+(3,1):7   (3,2):5   (3,3):   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):6   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  IOD_1
+Inicio do teste -> moveDownTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):8   (2,3):5   
+(3,1):7   (3,2):   (3,3):6   
+
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):7   (3,2):8   (3,3):   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+(1,1):1   (1,2):2   (1,3):   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):   (1,3):2   
+(2,1):4   (2,2):5   (2,3):3   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):   (2,3):5   
+(3,1):7   (3,2):8   (3,3):6   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):   
+(3,1):7   (3,2):8   (3,3):6   
+
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+(1,1):1   (1,2):2   (1,3):3   
+(2,1):4   (2,2):5   (2,3):6   
+(3,1):   (3,2):7   (3,3):8   
+
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+(1,1):   (1,2):2   (1,3):3   
+(2,1):1   (2,2):5   (2,3):6   
+(3,1):4   (3,2):7   (3,3):8   
+
+(1,1):10   (1,2):11   (1,3):12   
+(2,1):13   (2,2):14   (2,3):15   
+(3,1):16   (3,2):17   (3,3):8   
+
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+  IOD_2
+Inicio do teste -> moveDownTest
+domain.SquareBoard@27aba3b4
+domain.SquareBoard@27aba3b4
+Fim do teste 	-> moveDownTest
+
+Inicio do teste -> moveUpTest
+domain.SquareBoard@23942399
+domain.SquareBoard@23942399
+Fim do teste 	-> moveUpTest
+
+Inicio do teste -> moveLeftTest
+domain.SquareBoard@6696a98f
+domain.SquareBoard@6696a98f
+Fim do teste 	-> moveLeftTest
+
+Inicio do teste -> moveRightTest
+domain.SquareBoard@2d768eb4
+domain.SquareBoard@2d768eb4
+Fim do teste 	-> moveRightTest
+
+Inicio do teste -> moveNullTest
+domain.SquareBoard@57ba2ead
+domain.SquareBoard@57ba2ead
+Fim do teste 	-> moveNullTest
+
+Inicio do teste -> putTilesInTheBoard
+domain.SquareBoard@55b05728
+domain.SquareBoard@55b05728
+Fim do teste 	-> putTilesInTheBoard
+{putTilesInTheBoard=pass, moveUpTest=pass, moveRightTest=pass, moveLeftTest=pass, moveDownTest=pass, moveNullTest=pass}
+test report: {putTilesInTheBoard=JTD_1, JTD_2, JTI_1, JTI_2, EAM_1, EAM_2, EAM_3, EAM_4, moveUpTest=JTD_1, JTD_2, JTI_1, JTI_2, moveRightTest=JTD_1, JTD_2, JTI_1, JTI_2, moveLeftTest=JTD_1, JTD_2, JTI_1, JTI_2, EAM_18, EAM_19, moveDownTest=JTD_1, JTD_2, JTI_1, JTI_2, moveNullTest=JTD_1, JTD_2, JTI_1, JTI_2}
+mutant report: {EAM_9=, EAM_19=moveLeftTest, EAM_8=, EAM_7=, EAM_17=, EAM_6=, EAM_18=moveLeftTest, EAM_15=, EAM_16=, EAM_13=, EAM_14=, JTI_2=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, EAM_1=putTilesInTheBoard, JTI_3=, JTI_1=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, EAM_5=, EAM_4=putTilesInTheBoard, JTI_4=, EAM_3=putTilesInTheBoard, EAM_2=putTilesInTheBoard, JTD_1=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, JTD_2=moveDownTest, moveUpTest, moveLeftTest, moveRightTest, moveNullTest, putTilesInTheBoard, EAM_11=, EAM_12=, EAM_10=, EAM_24=, JSI_2=, JSI_1=, JSI_3=, EAM_22=, IOD_2=, EAM_23=, IOD_1=, EAM_20=, EAM_21=}
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/EAM_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/EAM_5/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JTI_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JSI_3/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.getMutatedContent --- start_index =6 : end_index =9
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.getMutatedContent --- start_index =7 : end_index =10
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JSI_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JTD_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JSI_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JSI_2/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JTD_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JTD_2/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JTI_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/JSI_1/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/EAM_5/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/EAM_4/Board.java
+MutantsViewerPanel.mList_mouseClicked - mutant_log != null
+MutantsViewerPanel.showMutant (with mutant_log)
+MutantsViewerPanel.getMutatedLineNum --- start_index =5 : end_index =8
+MutantsViewerPanel.getMutatedContent --- start_index =5 : end_index =8
+showMutant: myFile =/media/12104064/6559-AC7F/workspace/INE5448/EightPuzzleGame/mujava/result/domain.Board/class_mutants/EAM_5/Board.java
