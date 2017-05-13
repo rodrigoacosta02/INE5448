@@ -13,7 +13,7 @@ public class TesteMercadoLeilaoDalance {
 
 	private final static String PRODUTO_1 = "Produto 1";
 	private final static String CPF_COMPRADOR = "01234567890";
-	// private final static String PRODUTO_1 = "Produto 1";
+	private final static Double LANCE_MINIMO = 0.1;
 
 	private MercadoLeilao ml;
 
@@ -26,7 +26,7 @@ public class TesteMercadoLeilaoDalance {
 
 	private void cadastrarProdutosEmLeilao() {
 		try {
-			this.ml.cadastrarProduto(PRODUTO_1, "produto descrição", 0.1, "01234567890",
+			this.ml.cadastrarProduto(PRODUTO_1, "produto descrição", LANCE_MINIMO, "01234567890",
 					new Date(new Date().getTime() + 10));
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -62,6 +62,12 @@ public class TesteMercadoLeilaoDalance {
 		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.0);
 	}
 
+	@Test(expected = Exception.class)
+	public void testDoisLancesMesmoUsuarioIguais() throws Exception {
+		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.0);
+		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.0);
+	}
+
 	@Test
 	public void testDoisLancesMesmoUsuario() throws Exception {
 		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.0);
@@ -88,6 +94,13 @@ public class TesteMercadoLeilaoDalance {
 	@Test
 	public void testLance() throws Exception {
 		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, Double.MAX_VALUE);
+		assertTrue(this.ml.getProdutosQueDeuLance(CPF_COMPRADOR).size() == 1);
+		assertTrue(this.ml.retornaLancesDeUmUsuario(CPF_COMPRADOR).size() == 1);
+	}
+
+	@Test
+	public void testLanceMinimo() throws Exception {
+		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, LANCE_MINIMO);
 		assertTrue(this.ml.getProdutosQueDeuLance(CPF_COMPRADOR).size() == 1);
 		assertTrue(this.ml.retornaLancesDeUmUsuario(CPF_COMPRADOR).size() == 1);
 	}
