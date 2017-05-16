@@ -1,0 +1,10 @@
+{
+  "test_name": "testes/TesteMercadoLeilaoDalance.testLance()V",
+  "modified_states": "4",
+  "covered_states": "0",
+  "useless_covered_states": "0",
+  "modified":  [ "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Lance.donoDoLance", "modelo/ProdutoLeilao.lancesEfetuados" ],
+  "covered":  [  ],
+  "useless":  [  ],
+  "state_coverage": "0.0"
+}

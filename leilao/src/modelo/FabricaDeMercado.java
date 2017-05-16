@@ -10,15 +10,13 @@ import java.io.Serializable;
 import interfaces.IMercadoLeilao;
 
 public class FabricaDeMercado implements Serializable {
-	
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public FabricaDeMercado() {
-		
+
 	}
 
-	
 	public IMercadoLeilao montar() {
 		MercadoLeilao mercado = null;
 		try {
@@ -26,13 +24,14 @@ public class FabricaDeMercado implements Serializable {
 			ObjectInputStream objLeitura = new ObjectInputStream(arquivo);
 			mercado = (MercadoLeilao) objLeitura.readObject();
 			objLeitura.close();
-		} catch (IOException | ClassNotFoundException e) {
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		return mercado;
 	}
 
-	
 	public void desmontar(IMercadoLeilao mercado) {
 		try {
 			FileOutputStream arquivo = new FileOutputStream("arquivoDoMercado");
