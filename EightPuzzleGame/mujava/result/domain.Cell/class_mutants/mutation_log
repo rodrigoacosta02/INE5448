@@ -1,8 +1,0 @@
-PCD_1:35:(domain.Cell) cell => cell
-PCD_2:38:(domain.Cell) cell => cell
-PCD_3:41:(domain.Cell) cell => cell
-JSI_1:10:static is inserted
-JTD_1:18:this.tile => tile
-JTI_1:18:tile  -->  this.tile
-IOD_1:33:public boolean equals(java.lang.Object cell) is deleted.
-IOD_2:46:public java.lang.String toString() is deleted.

@@ -1,6 +1,0 @@
-Tile(int)
-int_getNumber()
-boolean_biggerThan(domain.Tile)
-boolean_equals(java.lang.Object)
-int_hashCode()
-java.lang.String_toString()
