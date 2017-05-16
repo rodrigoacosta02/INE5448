@@ -9,5 +9,6 @@ public class TesteExemplo {
 	@Test
 	public void testName() throws Exception {
 		assertTrue(true);
+		assertTrue(false);
 	}
 }
