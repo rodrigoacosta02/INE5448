@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="ine" name="testes.TesteMercadoLeilaoDalance" skipped="0" tests="9" time="0.167" timestamp="2017-05-16T12:12:06">
+<testsuite errors="0" failures="0" hostname="ine" name="testes.TesteMercadoLeilaoDalance" skipped="0" tests="9" time="0.187" timestamp="2017-05-16T13:36:40">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -49,7 +49,7 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.TesteMercadoLeilaoDalance skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/media/12104064/6559-AC7F/workspace/INE5448/leilao/scova/TEST-testes.TesteMercadoLeilaoDalance.xml crashfile=/media/12104064/6559-AC7F/workspace/INE5448/scova/build/junitvmwatcher3437632108958952989.properties propsfile=/media/12104064/6559-AC7F/workspace/INE5448/scova/build/junit2816577744860237795.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testes.TesteMercadoLeilaoDalance skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/media/12104064/6559-AC7F/workspace/INE5448/leilao/scova/TEST-testes.TesteMercadoLeilaoDalance.xml crashfile=/media/12104064/6559-AC7F/workspace/INE5448/scova/build/junitvmwatcher172667226121823961.properties propsfile=/media/12104064/6559-AC7F/workspace/INE5448/scova/build/junit7705906113347031261.properties" />
     <property name="java.class.path" value="/media/12104064/6559-AC7F/workspace/INE5448/leilao/scova:/media/12104064/6559-AC7F/workspace/INE5448/scova/lib/bin:/media/12104064/6559-AC7F/workspace/INE5448/scova/deps/junit-4.10.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/home/100000000243152/Documentos/eclipse/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="&lt;!--test.home" value="/media/12104064/6559-AC7F/workspace/EightPuzzleGame/testes                            --&gt;" />
@@ -75,37 +75,21 @@
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="all-report" />
   </properties>
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testNaoExisteProduto" time="0.007" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testNaoExisteComprador" time="0.001" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testNaoExisteProduto" time="0.012" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesDoisUsuario" time="0.024" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testLance" time="0.01" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testLanceMinimo" time="0.004" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testNaoExisteComprador" time="0.002" />
   <testcase classname="testes.TesteMercadoLeilaoDalance" name="testValorInferior" time="0.001" />
   <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesSegundoInferiorAoPrimeiro" time="0.001" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesMesmoUsuarioIguais" time="0.001" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesMesmoUsuario" time="0.017" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesDoisUsuario" time="0.005" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testLance" time="0.005" />
-  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testLanceMinimo" time="0.004" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesMesmoUsuarioIguais" time="0.004" />
+  <testcase classname="testes.TesteMercadoLeilaoDalance" name="testDoisLancesMesmoUsuario" time="0.011" />
   <system-out><![CDATA[--------------------------------------
 Begin test capture for : testes/TesteMercadoLeilaoDalance.testNaoExisteProduto()V
 --------------------------------------
-Begin test capture for : testes/TesteMercadoLeilaoDalance.testNaoExisteComprador()V
---------------------------------------
-Begin test capture for : testes/TesteMercadoLeilaoDalance.testValorInferior()V
---------------------------------------
-Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesSegundoInferiorAoPrimeiro()V
---------------------------------------
-Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuarioIguais()V
---------------------------------------
-Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
-State Coverage Report for testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
-Modified states: 4 [ "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Lance.donoDoLance", "modelo/ProdutoLeilao.lancesEfetuados" ]
-Covered states: 0 [  ]
-State Coverage: 0.0
-End test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
---------------------------------------
---------------------------------------
 Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesDoisUsuario()V
 State Coverage Report for testes/TesteMercadoLeilaoDalance.testDoisLancesDoisUsuario()V
-Modified states: 10 [ "modelo/Usuario.endereco", "modelo/Usuario.email", "modelo/Usuario.bensComprados", "modelo/Usuario.bensOfertados", "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Usuario.cpf", "modelo/Lance.donoDoLance", "modelo/Usuario.nome", "modelo/ProdutoLeilao.lancesEfetuados" ]
+Modified states: 12 [ "modelo/Usuario.endereco", "modelo/Usuario.email", "modelo/Usuario.bensComprados", "modelo/Usuario.bensOfertados", "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Usuario.cpf", "modelo/MercadoLeilao.produtosVendidos", "modelo/Lance.donoDoLance", "modelo/Usuario.nome", "modelo/ProdutoLeilao.comprador", "modelo/ProdutoLeilao.lancesEfetuados" ]
 Covered states: 0 [  ]
 State Coverage: 0.0
 End test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesDoisUsuario()V
@@ -125,6 +109,22 @@ Modified states: 4 [ "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebe
 Covered states: 0 [  ]
 State Coverage: 0.0
 End test capture for : testes/TesteMercadoLeilaoDalance.testLanceMinimo()V
+--------------------------------------
+--------------------------------------
+Begin test capture for : testes/TesteMercadoLeilaoDalance.testNaoExisteComprador()V
+--------------------------------------
+Begin test capture for : testes/TesteMercadoLeilaoDalance.testValorInferior()V
+--------------------------------------
+Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesSegundoInferiorAoPrimeiro()V
+--------------------------------------
+Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuarioIguais()V
+--------------------------------------
+Begin test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
+State Coverage Report for testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
+Modified states: 4 [ "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Lance.donoDoLance", "modelo/ProdutoLeilao.lancesEfetuados" ]
+Covered states: 3 [ "modelo/MercadoLeilao.usuarios", "modelo/Lance.produtoQueRecebeuOLance", "testes/TesteMercadoLeilaoDalance.ml" ]
+State Coverage: 0.25
+End test capture for : testes/TesteMercadoLeilaoDalance.testDoisLancesMesmoUsuario()V
 --------------------------------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

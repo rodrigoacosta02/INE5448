@@ -1,9 +1,9 @@
 {
   "test_name": "testes/TesteMercadoLeilaoDalance.testDoisLancesDoisUsuario()V",
-  "modified_states": "10",
+  "modified_states": "12",
   "covered_states": "0",
   "useless_covered_states": "0",
-  "modified":  [ "modelo/Usuario.endereco", "modelo/Usuario.email", "modelo/Usuario.bensComprados", "modelo/Usuario.bensOfertados", "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Usuario.cpf", "modelo/Lance.donoDoLance", "modelo/Usuario.nome", "modelo/ProdutoLeilao.lancesEfetuados" ],
+  "modified":  [ "modelo/Usuario.endereco", "modelo/Usuario.email", "modelo/Usuario.bensComprados", "modelo/Usuario.bensOfertados", "modelo/Lance.valorDoLance", "modelo/Lance.produtoQueRecebeuOLance", "modelo/Usuario.cpf", "modelo/MercadoLeilao.produtosVendidos", "modelo/Lance.donoDoLance", "modelo/Usuario.nome", "modelo/ProdutoLeilao.comprador", "modelo/ProdutoLeilao.lancesEfetuados" ],
   "covered":  [  ],
   "useless":  [  ],
   "state_coverage": "0.0"

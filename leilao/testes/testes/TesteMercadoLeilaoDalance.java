@@ -1,12 +1,14 @@
 package testes;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import modelo.Lance;
 import modelo.MercadoLeilao;
 
 public class TesteMercadoLeilaoDalance {
@@ -72,9 +74,10 @@ public class TesteMercadoLeilaoDalance {
 	public void testDoisLancesMesmoUsuario() throws Exception {
 		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.0);
 		this.ml.daLance(PRODUTO_1, CPF_COMPRADOR, 1.5);
-
+		List<Lance> retornaLancesDeUmUsuario = this.ml.retornaLancesDeUmUsuario(CPF_COMPRADOR);
 		assertTrue(this.ml.getProdutosQueDeuLance(CPF_COMPRADOR).size() == 1);
 		assertTrue(this.ml.retornaLancesDeUmUsuario(CPF_COMPRADOR).size() == 2);
+		assertEquals(PRODUTO_1, retornaLancesDeUmUsuario.get(0).getNomeProdutoQueRecebeuOLance());
 	}
 
 	@Test
