@@ -11,9 +11,9 @@ public class TesteFuncionario {
 	@Test
 	public void dadosFuncionario() throws Exception {
 		String nomeFuncionario = "Nome do Funcionario";
-		int idFunc = 1;
-		Funcionario funcionario = new Funcionario(idFunc, nomeFuncionario);
+		Funcionario funcionario = new Funcionario(nomeFuncionario);
 		assertEquals(nomeFuncionario, funcionario.getNome());
-		assertEquals(idFunc, funcionario.getId());
+		assertEquals(1, funcionario.getId());
 	}
+
 }

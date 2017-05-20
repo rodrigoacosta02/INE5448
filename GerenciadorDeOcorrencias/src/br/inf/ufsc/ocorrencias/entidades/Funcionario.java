@@ -1,11 +1,13 @@
 package br.inf.ufsc.ocorrencias.entidades;
 
 public class Funcionario {
+
+	private static int ID_ATUAL = 0;
 	private int id;
 	private String nome;
 
-	public Funcionario(int id, String nome) {
-		this.id = id;
+	public Funcionario(String nome) {
+		this.id = ++ID_ATUAL;
 		this.nome = nome;
 	}
 
