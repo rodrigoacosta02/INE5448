@@ -70,8 +70,6 @@ public class TesteProjeto {
 			this.projeto.cadastroOcorrencia(new Ocorrencia(responsavel2, resumo, this.tipo));
 		}
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrencia, responsavel2);
-
-		assertEquals(responsavel2, this.ocorrencia.getResponsavel());
 	}
 
 	@Test
@@ -79,4 +77,10 @@ public class TesteProjeto {
 		this.projeto.concluirOcorrencia(this.ocorrencia);
 		assertEquals(EstadoOcorrencia.COMPLETADA, this.ocorrencia.getEstado());
 	}
+
+	@Test(expected = RuntimeException.class)
+	public void concluirOcorrenciaNaoIniciadoNaListaDoProjeto() throws Exception {
+		this.projeto.concluirOcorrencia(new Ocorrencia(new Funcionario("Teste Func"), "", TipoOcorrencia.MELHORIA));
+	}
+
 }

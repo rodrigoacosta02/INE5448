@@ -51,14 +51,12 @@ public class Projeto {
 	}
 
 	private Ocorrencia getOcorrenciaDaLista(Ocorrencia ocorrencia) {
-		if (this.ocorrencias.contains(ocorrencia)) {
-			for (Ocorrencia ocorrenciaValor : this.ocorrencias) {
-				if (ocorrenciaValor.equals(ocorrencia)) {
-					return ocorrenciaValor;
-				}
+		for (Ocorrencia ocorrenciaValor : this.ocorrencias) {
+			if (ocorrenciaValor.equals(ocorrencia)) {
+				return ocorrenciaValor;
 			}
 		}
-		throw new RuntimeException();
+		throw new RuntimeException("Ocorrencia não cadastrada");
 	}
 
 	public void concluirOcorrencia(Ocorrencia ocorrencia) {

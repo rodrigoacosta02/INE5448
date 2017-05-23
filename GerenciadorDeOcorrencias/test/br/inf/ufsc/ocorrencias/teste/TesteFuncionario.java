@@ -13,7 +13,7 @@ public class TesteFuncionario {
 		String nomeFuncionario = "Nome do Funcionario";
 		Funcionario funcionario = new Funcionario(nomeFuncionario);
 		assertEquals(nomeFuncionario, funcionario.getNome());
-		assertEquals(1, funcionario.getId());
+		assertTrue(funcionario.getId() > 0);
 	}
 
 }
