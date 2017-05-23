@@ -71,7 +71,6 @@ public class TesteProjeto {
 		}
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrencia, responsavel2);
 
-		assertEquals(responsavel2, this.ocorrencia.getResponsavel());
 	}
 
 	@Test
