@@ -17,6 +17,9 @@ public class Empresa {
 	}
 
 	public void cadastrarFuncionarios(Funcionario funcionario) {
+		if (this.funcionarios.contains(funcionario)) {
+			throw new RuntimeException("Funcionario já cadastrado");
+		}
 		this.funcionarios.add(funcionario);
 	}
 

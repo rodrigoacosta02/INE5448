@@ -62,4 +62,7 @@ public class Ocorrencia {
 		this.estado = estado;
 	}
 
+	public static void zerarChaveUnica() {
+		CHAVE_ATUAL = 0;
+	}
 }

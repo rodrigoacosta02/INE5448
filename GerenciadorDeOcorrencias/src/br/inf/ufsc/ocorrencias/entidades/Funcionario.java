@@ -19,4 +19,8 @@ public class Funcionario {
 		return this.id;
 	}
 
+	public static void zerarID() {
+		ID_ATUAL = 0;
+	}
+
 }

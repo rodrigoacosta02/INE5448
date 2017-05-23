@@ -24,6 +24,9 @@ public class TesteProjeto {
 
 	@Before
 	public void before() {
+		Funcionario.zerarID();
+		Ocorrencia.zerarChaveUnica();
+
 		this.tipo = TipoOcorrencia.TAREFA;
 		this.responsavel = new Funcionario(nomeResponsavel);
 		this.projeto = new Projeto();
@@ -33,12 +36,11 @@ public class TesteProjeto {
 
 	@Test
 	public void cadastrarOcorrencia() throws Exception {
-
 		Set<Ocorrencia> ocorrencias = this.projeto.getOcorrencias();
 		Ocorrencia ocorrencia = ocorrencias.iterator().next();
 		assertEquals(1, ocorrencias.size());
 
-		assertTrue(ocorrencia.getChaveUnica() > 0);
+		assertEquals(1, ocorrencia.getChaveUnica());
 		assertEquals(resumo, ocorrencia.getResumo());
 		assertEquals(this.responsavel, ocorrencia.getResponsavel());
 		assertEquals(null, ocorrencia.getPrioridade());
@@ -70,7 +72,6 @@ public class TesteProjeto {
 			this.projeto.cadastroOcorrencia(new Ocorrencia(responsavel2, resumo, this.tipo));
 		}
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrencia, responsavel2);
-
 	}
 
 	@Test
@@ -78,4 +79,10 @@ public class TesteProjeto {
 		this.projeto.concluirOcorrencia(this.ocorrencia);
 		assertEquals(EstadoOcorrencia.COMPLETADA, this.ocorrencia.getEstado());
 	}
+
+	@Test(expected = RuntimeException.class)
+	public void concluirOcorrenciaNaoIniciadoNaListaDoProjeto() throws Exception {
+		this.projeto.concluirOcorrencia(new Ocorrencia(new Funcionario("Teste Func"), "", TipoOcorrencia.MELHORIA));
+	}
+
 }
