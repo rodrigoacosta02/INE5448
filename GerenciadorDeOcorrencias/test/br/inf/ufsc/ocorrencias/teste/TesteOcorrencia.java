@@ -20,6 +20,8 @@ public class TesteOcorrencia {
 
 	@Before
 	public void before() {
+		Funcionario.zerarID();
+		Ocorrencia.zerarChaveUnica();
 		this.responsavel = new Funcionario("Func Resp");
 		this.tipo = TipoOcorrencia.TAREFA;
 		this.ocorrencia = new Ocorrencia(this.responsavel, resumo, this.tipo);

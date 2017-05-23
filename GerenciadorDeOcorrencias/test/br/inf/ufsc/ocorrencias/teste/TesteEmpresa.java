@@ -17,6 +17,7 @@ public class TesteEmpresa {
 
 	@Before
 	public void before() {
+		Funcionario.zerarID();
 		this.empresa = new Empresa();
 	}
 
@@ -27,7 +28,7 @@ public class TesteEmpresa {
 		List<Funcionario> funcionarios = this.empresa.getFuncionarios();
 
 		assertEquals(1, funcionarios.size());
-		assertTrue(funcionarios.get(0).getId() > 0);
+		assertEquals(1, funcionarios.get(0).getId());
 		assertEquals(funcNome, funcionarios.get(0).getNome());
 	}
 
