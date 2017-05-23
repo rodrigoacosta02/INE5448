@@ -17,12 +17,6 @@ public class Projeto {
 		this.limiteResponsaveis = new HashMap<Funcionario, Integer>();
 	}
 
-	public Projeto(Ocorrencia ocorrencia) {
-		this.ocorrencias = new HashSet<Ocorrencia>();
-		this.limiteResponsaveis = new HashMap<Funcionario, Integer>();
-		this.cadastroOcorrencia(ocorrencia);
-	}
-
 	public Set<Ocorrencia> getOcorrencias() {
 		return this.ocorrencias;
 	}

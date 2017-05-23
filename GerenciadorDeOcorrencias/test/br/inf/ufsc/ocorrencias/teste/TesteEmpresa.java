@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import br.inf.ufsc.ocorrencias.entidades.Funcionario;
 import br.inf.ufsc.ocorrencias.entidades.Projeto;
+import br.inf.ufsc.ocorrencias.exceptions.CadastroProjetoException;
 import br.inf.ufsc.ocorrencias.geral.Empresa;
 
 public class TesteEmpresa {
@@ -37,6 +38,21 @@ public class TesteEmpresa {
 		this.empresa.cadastrarProjeto(new Projeto());
 		List<Projeto> projetos = this.empresa.getProjetos();
 		assertEquals(1, projetos.size());
+	}
+
+	@Test
+	public void cadastrarDoisProjeto() throws Exception {
+		this.empresa.cadastrarProjeto(new Projeto());
+		this.empresa.cadastrarProjeto(new Projeto());
+		List<Projeto> todosProjetos = this.empresa.getProjetos();
+		assertEquals(2, todosProjetos.size());
+	}
+
+	@Test(expected = CadastroProjetoException.class)
+	public void cadastrarMesmoProjeto() throws Exception {
+		Projeto duplo = new Projeto();
+		this.empresa.cadastrarProjeto(duplo);
+		this.empresa.cadastrarProjeto(duplo);
 	}
 
 	@Test(expected = RuntimeException.class)

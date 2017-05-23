@@ -5,6 +5,8 @@ import java.util.List;
 
 import br.inf.ufsc.ocorrencias.entidades.Funcionario;
 import br.inf.ufsc.ocorrencias.entidades.Projeto;
+import br.inf.ufsc.ocorrencias.exceptions.CadastroFuncionarioException;
+import br.inf.ufsc.ocorrencias.exceptions.CadastroProjetoException;
 
 public class Empresa {
 
@@ -18,7 +20,7 @@ public class Empresa {
 
 	public void cadastrarFuncionarios(Funcionario funcionario) {
 		if (this.funcionarios.contains(funcionario)) {
-			throw new RuntimeException("Funcionario já cadastrado");
+			throw new CadastroFuncionarioException("Funcionario já cadastrado");
 		}
 		this.funcionarios.add(funcionario);
 	}
@@ -28,6 +30,9 @@ public class Empresa {
 	}
 
 	public void cadastrarProjeto(Projeto projeto) {
+		if (this.projetos.contains(projeto)) {
+			throw new CadastroProjetoException("Projeto já cadastrado");
+		}
 		this.projetos.add(projeto);
 	}
 

@@ -17,41 +17,41 @@ public class TesteProjeto {
 
 	final static String resumo = "Resumo da ocorrencia";
 	final static String nomeResponsavel = "Nome Responsavel";
-	TipoOcorrencia tipo;
-	Funcionario responsavel;
-	Projeto projeto;
-	Ocorrencia ocorrencia;
+	TipoOcorrencia tipoOcorrencia;
+	Funcionario responsavelOne;
+	Projeto projetoOne;
+	Ocorrencia ocorrenciaOne;
 
 	@Before
 	public void before() {
 		Funcionario.zerarID();
 		Ocorrencia.zerarChaveUnica();
 
-		this.tipo = TipoOcorrencia.TAREFA;
-		this.responsavel = new Funcionario(nomeResponsavel);
-		this.projeto = new Projeto();
-		this.ocorrencia = new Ocorrencia(this.responsavel, resumo, this.tipo);
-		this.projeto.cadastroOcorrencia(this.ocorrencia);
+		this.tipoOcorrencia = TipoOcorrencia.TAREFA;
+		this.responsavelOne = new Funcionario(nomeResponsavel);
+		this.projetoOne = new Projeto();
+		this.ocorrenciaOne = new Ocorrencia(this.responsavelOne, resumo, this.tipoOcorrencia);
+		this.projetoOne.cadastroOcorrencia(this.ocorrenciaOne);
 	}
 
 	@Test
 	public void cadastrarOcorrencia() throws Exception {
-		Set<Ocorrencia> ocorrencias = this.projeto.getOcorrencias();
+		Set<Ocorrencia> ocorrencias = this.projetoOne.getOcorrencias();
 		Ocorrencia ocorrencia = ocorrencias.iterator().next();
 		assertEquals(1, ocorrencias.size());
 
 		assertEquals(1, ocorrencia.getChaveUnica());
 		assertEquals(resumo, ocorrencia.getResumo());
-		assertEquals(this.responsavel, ocorrencia.getResponsavel());
+		assertEquals(this.responsavelOne, ocorrencia.getResponsavel());
 		assertEquals(null, ocorrencia.getPrioridade());
 		assertEquals(EstadoOcorrencia.ABERTA, ocorrencia.getEstado());
-		assertEquals(this.tipo, ocorrencia.getTipo());
+		assertEquals(this.tipoOcorrencia, ocorrencia.getTipo());
 	}
 
 	@Test(expected = RuntimeException.class)
 	public void cadastrarOcorrenciaOnzeOcorrenciasMesmoResponsavel() throws Exception {
 		for (int i = 0; i < 10; i++) {
-			this.projeto.cadastroOcorrencia(new Ocorrencia(this.responsavel, resumo, this.tipo));
+			this.projetoOne.cadastroOcorrencia(new Ocorrencia(this.responsavelOne, resumo, this.tipoOcorrencia));
 		}
 	}
 
@@ -59,9 +59,9 @@ public class TesteProjeto {
 	public void mudarResponsavelDaOcorrencia() throws Exception {
 
 		Funcionario responsavel2 = new Funcionario("Func Resp2");
-		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrencia, responsavel2);
+		this.projetoOne.mudarResponsavelPorOcorrencia(this.ocorrenciaOne, responsavel2);
 
-		assertEquals(responsavel2, this.ocorrencia.getResponsavel());
+		assertEquals(responsavel2, this.ocorrenciaOne.getResponsavel());
 	}
 
 	@Test(expected = RuntimeException.class)
@@ -69,20 +69,20 @@ public class TesteProjeto {
 
 		Funcionario responsavel2 = new Funcionario("Func Resp2");
 		for (int i = 0; i < 10; i++) {
-			this.projeto.cadastroOcorrencia(new Ocorrencia(responsavel2, resumo, this.tipo));
+			this.projetoOne.cadastroOcorrencia(new Ocorrencia(responsavel2, resumo, this.tipoOcorrencia));
 		}
-		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrencia, responsavel2);
+		this.projetoOne.mudarResponsavelPorOcorrencia(this.ocorrenciaOne, responsavel2);
 	}
 
 	@Test
 	public void concluirOcorrencia() throws Exception {
-		this.projeto.concluirOcorrencia(this.ocorrencia);
-		assertEquals(EstadoOcorrencia.COMPLETADA, this.ocorrencia.getEstado());
+		this.projetoOne.concluirOcorrencia(this.ocorrenciaOne);
+		assertEquals(EstadoOcorrencia.COMPLETADA, this.ocorrenciaOne.getEstado());
 	}
 
 	@Test(expected = RuntimeException.class)
 	public void concluirOcorrenciaNaoIniciadoNaListaDoProjeto() throws Exception {
-		this.projeto.concluirOcorrencia(new Ocorrencia(new Funcionario("Teste Func"), "", TipoOcorrencia.MELHORIA));
+		this.projetoOne.concluirOcorrencia(new Ocorrencia(new Funcionario("Teste Func"), "", TipoOcorrencia.MELHORIA));
 	}
 
 }

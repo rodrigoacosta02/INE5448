@@ -47,7 +47,8 @@ public class TesteOcorrencia {
 
 	@Test
 	public void estadoCompletaNaoMudaResponsavelEPrioridade() throws Exception {
-		Projeto projeto = new Projeto(this.ocorrencia);
+		Projeto projeto = new Projeto();
+		projeto.cadastroOcorrencia(this.ocorrencia);
 		projeto.concluirOcorrencia(this.ocorrencia);
 		Ocorrencia ocorrenciaAtual = projeto.getOcorrencias().iterator().next();
 		ocorrenciaAtual.setPrioridade(PrioridadeOcorrencia.ALTA);
