@@ -23,4 +23,8 @@ public class Funcionario {
 		ID_ATUAL = 0;
 	}
 
+	@Override
+	public String toString() {
+		return this.nome;
+	}
 }

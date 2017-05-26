@@ -7,10 +7,10 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import br.inf.ufsc.ocorrencias.entidades.Empresa;
 import br.inf.ufsc.ocorrencias.entidades.Funcionario;
 import br.inf.ufsc.ocorrencias.entidades.Projeto;
 import br.inf.ufsc.ocorrencias.exceptions.CadastroProjetoException;
-import br.inf.ufsc.ocorrencias.geral.Empresa;
 
 public class TesteEmpresa {
 

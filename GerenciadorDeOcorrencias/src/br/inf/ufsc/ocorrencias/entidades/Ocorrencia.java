@@ -7,6 +7,7 @@ import br.inf.ufsc.ocorrencias.enums.EstadoOcorrencia;
 public class Ocorrencia {
 
 	private static int CHAVE_ATUAL = 0;
+
 	private int chaveUnica;
 	private String resumo;
 	private Funcionario responsavel;
@@ -46,20 +47,22 @@ public class Ocorrencia {
 		return this.estado;
 	}
 
-	protected void setResponsavel(Funcionario responsavel) {
-		if (this.estado != EstadoOcorrencia.COMPLETADA) {
-			this.responsavel = responsavel;
-		}
-	}
-
 	public void setPrioridade(PrioridadeOcorrencia prioridade) {
 		if (this.estado != EstadoOcorrencia.COMPLETADA) {
 			this.prioridade = prioridade;
 		}
 	}
 
+	protected void setResponsavel(Funcionario responsavel) {
+		if (this.estado != EstadoOcorrencia.COMPLETADA) {
+			this.responsavel = responsavel;
+		}
+	}
+
 	protected void setEstado(EstadoOcorrencia estado) {
-		this.estado = estado;
+		if (this.estado != EstadoOcorrencia.COMPLETADA) {
+			this.estado = estado;
+		}
 	}
 
 	public static void zerarChaveUnica() {

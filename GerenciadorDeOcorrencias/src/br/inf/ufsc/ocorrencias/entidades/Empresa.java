@@ -1,10 +1,8 @@
-package br.inf.ufsc.ocorrencias.geral;
+package br.inf.ufsc.ocorrencias.entidades;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import br.inf.ufsc.ocorrencias.entidades.Funcionario;
-import br.inf.ufsc.ocorrencias.entidades.Projeto;
 import br.inf.ufsc.ocorrencias.exceptions.CadastroFuncionarioException;
 import br.inf.ufsc.ocorrencias.exceptions.CadastroProjetoException;
 

@@ -11,6 +11,7 @@ import br.inf.ufsc.ocorrencias.entidades.Funcionario;
 import br.inf.ufsc.ocorrencias.entidades.Ocorrencia;
 import br.inf.ufsc.ocorrencias.entidades.Projeto;
 import br.inf.ufsc.ocorrencias.enums.EstadoOcorrencia;
+import br.inf.ufsc.ocorrencias.enums.PrioridadeOcorrencia;
 import br.inf.ufsc.ocorrencias.enums.TipoOcorrencia;
 
 public class TesteProjeto {
@@ -83,6 +84,19 @@ public class TesteProjeto {
 	@Test(expected = RuntimeException.class)
 	public void concluirOcorrenciaNaoIniciadoNaListaDoProjeto() throws Exception {
 		this.projetoOne.concluirOcorrencia(new Ocorrencia(new Funcionario("Teste Func"), "", TipoOcorrencia.MELHORIA));
+	}
+
+	@Test
+	public void estadoCompletaNaoMudaResponsavelEPrioridade() throws Exception {
+		Projeto projeto = new Projeto();
+		projeto.cadastroOcorrencia(this.ocorrenciaOne);
+		projeto.concluirOcorrencia(this.ocorrenciaOne);
+		Ocorrencia ocorrenciaAtual = projeto.getOcorrencias().iterator().next();
+		ocorrenciaAtual.setPrioridade(PrioridadeOcorrencia.ALTA);
+		projeto.mudarResponsavelPorOcorrencia(ocorrenciaAtual, new Funcionario("Func 2"));
+
+		assertEquals(null, ocorrenciaAtual.getPrioridade());
+		assertEquals(this.responsavelOne, ocorrenciaAtual.getResponsavel());
 	}
 
 }
