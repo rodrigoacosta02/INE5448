@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import br.inf.ufsc.ocorrencias.enums.EstadoOcorrencia;
+import br.inf.ufsc.ocorrencias.exceptions.CadastroOcorrenciaException;
 
 public class Projeto {
 
@@ -19,6 +20,10 @@ public class Projeto {
 
 	public Set<Ocorrencia> getOcorrencias() {
 		return this.ocorrencias;
+	}
+
+	public Map<Funcionario, Integer> getLimiteResponsaveis() {
+		return this.limiteResponsaveis;
 	}
 
 	public void cadastroOcorrencia(Ocorrencia ocorrencia) {
@@ -36,7 +41,7 @@ public class Projeto {
 		if (this.limiteResponsaveis.containsKey(responsavel)) {
 			int numDeOcorrenciasDoResponsavel = this.limiteResponsaveis.get(responsavel);
 			if (numDeOcorrenciasDoResponsavel == 10) {
-				throw new RuntimeException("Limite de ocorrencias por responsavel");
+				throw new CadastroOcorrenciaException("Limite de ocorrencias por responsavel");
 			}
 			this.limiteResponsaveis.put(responsavel, numDeOcorrenciasDoResponsavel + 1);
 		} else {
@@ -44,17 +49,25 @@ public class Projeto {
 		}
 	}
 
-	private Ocorrencia getOcorrenciaDaLista(Ocorrencia ocorrencia) {
+	public Ocorrencia getOcorrenciaDaLista(Ocorrencia ocorrencia) {
 		for (Ocorrencia ocorrenciaValor : this.ocorrencias) {
 			if (ocorrenciaValor.equals(ocorrencia)) {
 				return ocorrenciaValor;
 			}
 		}
-		throw new RuntimeException("Ocorrencia não cadastrada");
+		throw new CadastroOcorrenciaException("Ocorrencia não cadastrada");
+	}
+
+	public Funcionario getResponsavelPorOcorrencia(Ocorrencia ocorrencia) {
+		return this.getOcorrenciaDaLista(ocorrencia).getResponsavel();
 	}
 
 	public void concluirOcorrencia(Ocorrencia ocorrencia) {
 		this.getOcorrenciaDaLista(ocorrencia).setEstado(EstadoOcorrencia.COMPLETADA);
+	}
+
+	public Object getEstadoOcorrencia(Ocorrencia ocorrencia) {
+		return this.getOcorrenciaDaLista(ocorrencia).getEstado();
 	}
 
 }

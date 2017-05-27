@@ -46,10 +46,10 @@ public class TesteOcorrencia {
 	@Test
 	public void duasOcorrencias() throws Exception {
 
-		TipoOcorrencia tipo = TipoOcorrencia.BUG;
+		TipoOcorrencia tipo2 = TipoOcorrencia.BUG;
 		String resumo2 = "Outro resumo";
 		Funcionario responsavel2 = new Funcionario("Maria da Rosa");
-		Ocorrencia ocorrencia2 = new Ocorrencia(responsavel2, resumo2, tipo);
+		Ocorrencia ocorrencia2 = new Ocorrencia(responsavel2, resumo2, tipo2);
 
 		assertEquals(1, this.ocorrencia.getChaveUnica());
 		assertEquals(resumo, this.ocorrencia.getResumo());
@@ -63,31 +63,24 @@ public class TesteOcorrencia {
 		assertEquals(responsavel2, ocorrencia2.getResponsavel());
 		assertEquals(null, ocorrencia2.getPrioridade());
 		assertEquals(EstadoOcorrencia.ABERTA, ocorrencia2.getEstado());
-		assertEquals(tipo, ocorrencia2.getTipo());
+		assertEquals(tipo2, ocorrencia2.getTipo());
 	}
 
 	@Test
 	public void mudarPrioridade() throws Exception {
-		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.ALTA);
-
-		assertEquals(PrioridadeOcorrencia.ALTA, this.ocorrencia.getPrioridade());
-	}
-
-	@Test
-	public void mudarPrioridadeDuasVezes() throws Exception {
-		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.ALTA);
-		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.BAIXA);
-
-		assertEquals(PrioridadeOcorrencia.BAIXA, this.ocorrencia.getPrioridade());
+		for (PrioridadeOcorrencia prioridade : PrioridadeOcorrencia.values()) {
+			this.ocorrencia.setPrioridade(prioridade);
+			assertEquals(prioridade, this.ocorrencia.getPrioridade());
+		}
 	}
 
 	@Test
 	public void naoMudarPrioridadeAposEstadoCompletada() throws Exception {
-		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.BAIXA);
-		this.alteracaoDeEstadoParaCompletada(this.ocorrencia);
 		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.ALTA);
+		this.alteracaoDeEstadoParaCompletada(this.ocorrencia);
+		this.ocorrencia.setPrioridade(PrioridadeOcorrencia.BAIXA);
 
-		assertEquals(PrioridadeOcorrencia.BAIXA, this.ocorrencia.getPrioridade());
+		assertEquals(PrioridadeOcorrencia.ALTA, this.ocorrencia.getPrioridade());
 	}
 
 	@Test
