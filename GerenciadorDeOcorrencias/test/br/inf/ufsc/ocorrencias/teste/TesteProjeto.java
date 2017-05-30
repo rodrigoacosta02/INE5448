@@ -71,7 +71,7 @@ public class TesteProjeto {
 	}
 
 	@Test
-	public void cadastrarOcorrenciaDezOcorrenciasMesmoResponsavel() throws Exception {
+	public void cadastraDezOcorrenciasParaMesmoResponsavel() throws Exception {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		for (int i = 0; i < 9; i++) {
 			this.projeto.cadastroOcorrencia(new Ocorrencia(this.responsavelJoao, resumo, TipoOcorrencia.TAREFA));
@@ -84,7 +84,7 @@ public class TesteProjeto {
 	}
 
 	@Test(expected = CadastroOcorrenciaException.class)
-	public void cadastrarOcorrenciaOnzeOcorrenciasMesmoResponsavel() throws Exception {
+	public void cadastraOnzeOcorrenciasParaMesmoResponsavel() throws Exception {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		this.cadastrarDezOcorrencias(this.responsavelJoao);
 	}
@@ -120,12 +120,12 @@ public class TesteProjeto {
 	}
 
 	@Test(expected = CadastroOcorrenciaException.class)
-	public void concluirOcorrenciaNaoIniciadoNaListaDoProjeto() throws Exception {
+	public void concluirOcorrenciaNaoCadastrada() throws Exception {
 		this.projeto.concluirOcorrencia(this.ocorrenciaTarefa);
 	}
 
 	@Test(expected = CadastroOcorrenciaException.class)
-	public void retornarOcorrenciaNaoEstaNaListaDoProjeto() throws Exception {
+	public void retornarOcorrenciaNaoCadastrada() throws Exception {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		Ocorrencia ocorrenciaForaDaLista = new Ocorrencia(responsavelMaria, "Resumo", TipoOcorrencia.TAREFA);
