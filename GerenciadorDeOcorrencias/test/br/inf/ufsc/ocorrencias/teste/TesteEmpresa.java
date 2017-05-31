@@ -19,6 +19,7 @@ public class TesteEmpresa {
 	@Before
 	public void before() {
 		Funcionario.zerarID();
+		Projeto.zerarID();
 		this.empresa = new Empresa();
 	}
 

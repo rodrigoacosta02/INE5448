@@ -9,13 +9,20 @@ import br.inf.ufsc.ocorrencias.enums.EstadoOcorrencia;
 import br.inf.ufsc.ocorrencias.exceptions.CadastroOcorrenciaException;
 
 public class Projeto {
+	private static int ID_ATUAL = 0;
 
+	private int idProjeto;
 	private Set<Ocorrencia> ocorrencias;
 	private Map<Funcionario, Integer> limiteResponsaveis;
 
 	public Projeto() {
+		this.idProjeto = ++ID_ATUAL;
 		this.ocorrencias = new HashSet<Ocorrencia>();
 		this.limiteResponsaveis = new HashMap<Funcionario, Integer>();
+	}
+
+	public int getIdProjeto() {
+		return this.idProjeto;
 	}
 
 	public Set<Ocorrencia> getOcorrencias() {
@@ -26,9 +33,9 @@ public class Projeto {
 		return this.limiteResponsaveis;
 	}
 
-	public void cadastroOcorrencia(Ocorrencia ocorrencia) {
+	public boolean cadastroOcorrencia(Ocorrencia ocorrencia) {
 		this.validarLimiteResponsavelPorOcorrencia(ocorrencia.getResponsavel());
-		this.ocorrencias.add(ocorrencia);
+		return this.ocorrencias.add(ocorrencia);
 	}
 
 	public void mudarResponsavelPorOcorrencia(Ocorrencia ocorrencia, Funcionario responsavel) {
@@ -58,16 +65,11 @@ public class Projeto {
 		throw new CadastroOcorrenciaException("Ocorrencia não cadastrada");
 	}
 
-	public Funcionario getResponsavelPorOcorrencia(Ocorrencia ocorrencia) {
-		return this.getOcorrenciaDaLista(ocorrencia).getResponsavel();
-	}
-
 	public void concluirOcorrencia(Ocorrencia ocorrencia) {
 		this.getOcorrenciaDaLista(ocorrencia).setEstado(EstadoOcorrencia.COMPLETADA);
 	}
 
-	public Object getEstadoOcorrencia(Ocorrencia ocorrencia) {
-		return this.getOcorrenciaDaLista(ocorrencia).getEstado();
+	public static void zerarID() {
+		ID_ATUAL = 0;
 	}
-
 }

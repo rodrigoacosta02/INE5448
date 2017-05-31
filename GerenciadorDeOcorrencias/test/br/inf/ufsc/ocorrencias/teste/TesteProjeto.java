@@ -25,6 +25,7 @@ public class TesteProjeto {
 	public void before() {
 		Funcionario.zerarID();
 		Ocorrencia.zerarChaveUnica();
+		Projeto.zerarID();
 
 		this.responsavelJoao = new Funcionario(nomeResponsavel);
 		this.ocorrenciaTarefa = new Ocorrencia(this.responsavelJoao, resumo, TipoOcorrencia.TAREFA);
@@ -33,8 +34,17 @@ public class TesteProjeto {
 
 	@Test
 	public void novoProjeto() throws Exception {
+		assertEquals(1, this.projeto.getIdProjeto());
 		assertNotNull(this.projeto.getOcorrencias());
 		assertNotNull(this.projeto.getLimiteResponsaveis());
+	}
+
+	@Test
+	public void doisProjetos() throws Exception {
+		Projeto segundoProjeto = new Projeto();
+
+		assertEquals(1, this.projeto.getIdProjeto());
+		assertEquals(2, segundoProjeto.getIdProjeto());
 	}
 
 	@Test
@@ -101,7 +111,7 @@ public class TesteProjeto {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
 
-		assertEquals(responsavelMaria, this.projeto.getResponsavelPorOcorrencia(this.ocorrenciaTarefa));
+		assertEquals(responsavelMaria, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getResponsavel());
 	}
 
 	@Test(expected = CadastroOcorrenciaException.class)
@@ -116,7 +126,7 @@ public class TesteProjeto {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		this.projeto.concluirOcorrencia(this.ocorrenciaTarefa);
 
-		assertEquals(EstadoOcorrencia.COMPLETADA, this.projeto.getEstadoOcorrencia(this.ocorrenciaTarefa));
+		assertEquals(EstadoOcorrencia.COMPLETADA, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getEstado());
 	}
 
 	@Test(expected = CadastroOcorrenciaException.class)
@@ -140,7 +150,7 @@ public class TesteProjeto {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
 
-		assertEquals(this.responsavelJoao, this.projeto.getResponsavelPorOcorrencia(this.ocorrenciaTarefa));
+		assertEquals(this.responsavelJoao, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getResponsavel());
 	}
 
 	@Test
