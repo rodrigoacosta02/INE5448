@@ -1,41 +1,31 @@
 package br.inf.ufsc.ocorrencias.entidades;
 
-import java.util.LinkedList;
-import java.util.List;
-
-import br.inf.ufsc.ocorrencias.exceptions.CadastroFuncionarioException;
-import br.inf.ufsc.ocorrencias.exceptions.CadastroProjetoException;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Empresa {
 
-	private List<Funcionario> funcionarios;
-	private List<Projeto> projetos;
+	private Set<Funcionario> funcionarios;
+	private Set<Projeto> projetos;
 
 	public Empresa() {
-		this.funcionarios = new LinkedList<Funcionario>();
-		this.projetos = new LinkedList<Projeto>();
+		this.funcionarios = new HashSet<Funcionario>();
+		this.projetos = new HashSet<Projeto>();
 	}
 
-	public void cadastrarFuncionarios(Funcionario funcionario) {
-		if (this.funcionarios.contains(funcionario)) {
-			throw new CadastroFuncionarioException("Funcionario já cadastrado");
-		}
-		this.funcionarios.add(funcionario);
+	public boolean cadastrarFuncionarios(Funcionario funcionario) {
+		return this.funcionarios.add(funcionario);
 	}
 
-	public List<Funcionario> getFuncionarios() {
+	public Set<Funcionario> getFuncionarios() {
 		return this.funcionarios;
 	}
 
-	public void cadastrarProjeto(Projeto projeto) {
-		if (this.projetos.contains(projeto)) {
-			throw new CadastroProjetoException("Projeto já cadastrado");
-		}
-		this.projetos.add(projeto);
+	public boolean cadastrarProjeto(Projeto projeto) {
+		return this.projetos.add(projeto);
 	}
 
-	public List<Projeto> getProjetos() {
+	public Set<Projeto> getProjetos() {
 		return this.projetos;
 	}
-
 }
