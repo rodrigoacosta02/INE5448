@@ -38,10 +38,13 @@ public class Projeto {
 		return this.ocorrencias.add(ocorrencia);
 	}
 
-	public void mudarResponsavelPorOcorrencia(Ocorrencia ocorrencia, Funcionario responsavel) {
-		this.validarLimiteResponsavelPorOcorrencia(responsavel);
-
-		this.getOcorrenciaDaLista(ocorrencia).setResponsavel(responsavel);
+	public boolean mudarResponsavelPorOcorrencia(Ocorrencia ocorrencia, Funcionario responsavel) {
+		if (this.ocorrencias.contains(ocorrencia)) {
+			this.validarLimiteResponsavelPorOcorrencia(responsavel);
+			ocorrencia.setResponsavel(responsavel);
+			return true;
+		}
+		return false;
 	}
 
 	private void validarLimiteResponsavelPorOcorrencia(Funcionario responsavel) {
@@ -56,17 +59,12 @@ public class Projeto {
 		}
 	}
 
-	public Ocorrencia getOcorrenciaDaLista(Ocorrencia ocorrencia) {
-		for (Ocorrencia ocorrenciaValor : this.ocorrencias) {
-			if (ocorrenciaValor.equals(ocorrencia)) {
-				return ocorrenciaValor;
-			}
+	public boolean concluirOcorrencia(Ocorrencia ocorrencia) {
+		if (this.ocorrencias.contains(ocorrencia)) {
+			ocorrencia.setEstado(EstadoOcorrencia.COMPLETADA);
+			return true;
 		}
-		throw new CadastroOcorrenciaException("Ocorrencia não cadastrada");
-	}
-
-	public void concluirOcorrencia(Ocorrencia ocorrencia) {
-		this.getOcorrenciaDaLista(ocorrencia).setEstado(EstadoOcorrencia.COMPLETADA);
+		return false;
 	}
 
 	public static void zerarID() {

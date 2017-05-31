@@ -99,10 +99,11 @@ public class TesteProjeto {
 		this.cadastrarDezOcorrencias(this.responsavelJoao);
 	}
 
-	@Test(expected = CadastroOcorrenciaException.class)
+	@Test
 	public void mudarResponsavelDaOcorrenciaSemOcorrenciaCadastrada() throws Exception {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
-		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
+
+		assertFalse(this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria));
 	}
 
 	@Test
@@ -111,14 +112,15 @@ public class TesteProjeto {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
 
-		assertEquals(responsavelMaria, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getResponsavel());
+		assertEquals(responsavelMaria, this.ocorrenciaTarefa.getResponsavel());
 	}
 
-	@Test(expected = CadastroOcorrenciaException.class)
+	@Test
 	public void mudarResponsavelQuePossuaDezOcorrencias() throws Exception {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		this.cadastrarDezOcorrencias(responsavelMaria);
-		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
+
+		assertFalse(this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria));
 	}
 
 	@Test
@@ -126,20 +128,12 @@ public class TesteProjeto {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		this.projeto.concluirOcorrencia(this.ocorrenciaTarefa);
 
-		assertEquals(EstadoOcorrencia.COMPLETADA, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getEstado());
+		assertEquals(EstadoOcorrencia.COMPLETADA, this.ocorrenciaTarefa.getEstado());
 	}
 
-	@Test(expected = CadastroOcorrenciaException.class)
+	@Test
 	public void concluirOcorrenciaNaoCadastrada() throws Exception {
-		this.projeto.concluirOcorrencia(this.ocorrenciaTarefa);
-	}
-
-	@Test(expected = CadastroOcorrenciaException.class)
-	public void retornarOcorrenciaNaoCadastrada() throws Exception {
-		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
-		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
-		Ocorrencia ocorrenciaForaDaLista = new Ocorrencia(responsavelMaria, "Resumo", TipoOcorrencia.TAREFA);
-		this.projeto.getOcorrenciaDaLista(ocorrenciaForaDaLista);
+		assertFalse(this.projeto.concluirOcorrencia(this.ocorrenciaTarefa));
 	}
 
 	@Test
@@ -150,7 +144,7 @@ public class TesteProjeto {
 		Funcionario responsavelMaria = new Funcionario("Maria da Rosa");
 		this.projeto.mudarResponsavelPorOcorrencia(this.ocorrenciaTarefa, responsavelMaria);
 
-		assertEquals(this.responsavelJoao, this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getResponsavel());
+		assertEquals(this.responsavelJoao, this.ocorrenciaTarefa.getResponsavel());
 	}
 
 	@Test
@@ -158,12 +152,11 @@ public class TesteProjeto {
 		this.projeto.cadastroOcorrencia(this.ocorrenciaTarefa);
 		this.projeto.concluirOcorrencia(this.ocorrenciaTarefa);
 
-		this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).setPrioridade(PrioridadeOcorrencia.ALTA);
+		this.ocorrenciaTarefa.setPrioridade(PrioridadeOcorrencia.ALTA);
+		PrioridadeOcorrencia prioridade = this.ocorrenciaTarefa.getPrioridade();
 
-		PrioridadeOcorrencia prioridade = this.projeto.getOcorrenciaDaLista(this.ocorrenciaTarefa).getPrioridade();
 		assertEquals(null, prioridade);
 		assertNotEquals(PrioridadeOcorrencia.ALTA, prioridade);
-
 	}
 
 	/*
