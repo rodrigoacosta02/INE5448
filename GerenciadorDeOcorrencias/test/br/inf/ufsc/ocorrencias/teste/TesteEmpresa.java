@@ -24,28 +24,33 @@ public class TesteEmpresa {
 
 	@Test
 	public void cadastrarFuncionario() throws Exception {
-		String funcNome = "Func1";
-		this.empresa.cadastrarFuncionarios(new Funcionario(funcNome));
+		String nomeJoao = "João da Silva";
+		this.empresa.cadastrarFuncionarios(new Funcionario(nomeJoao));
 		List<Funcionario> funcionarios = this.empresa.getFuncionarios();
 
 		assertEquals(1, funcionarios.size());
 		assertEquals(1, funcionarios.get(0).getId());
-		assertEquals(funcNome, funcionarios.get(0).getNome());
+		assertEquals(nomeJoao, funcionarios.get(0).getNome());
 	}
 
 	@Test
 	public void cadastrarProjeto() throws Exception {
 		this.empresa.cadastrarProjeto(new Projeto());
-		List<Projeto> projetos = this.empresa.getProjetos();
-		assertEquals(1, projetos.size());
+		assertEquals(1, this.empresa.getProjetos().size());
 	}
 
 	@Test
 	public void cadastrarDoisProjeto() throws Exception {
 		this.empresa.cadastrarProjeto(new Projeto());
 		this.empresa.cadastrarProjeto(new Projeto());
-		List<Projeto> todosProjetos = this.empresa.getProjetos();
-		assertEquals(2, todosProjetos.size());
+		assertEquals(2, this.empresa.getProjetos().size());
+	}
+
+	@Test
+	public void cadastrarDoisFuncionarios() throws Exception {
+		this.empresa.cadastrarFuncionarios(new Funcionario("João da Silva"));
+		this.empresa.cadastrarFuncionarios(new Funcionario("Maria da Rosa"));
+		assertEquals(2, this.empresa.getFuncionarios().size());
 	}
 
 	@Test(expected = CadastroProjetoException.class)
@@ -57,8 +62,7 @@ public class TesteEmpresa {
 
 	@Test(expected = RuntimeException.class)
 	public void cadastrarFuncionarioJaCadastrado() throws Exception {
-		String funcNome = "Func1";
-		Funcionario funcionario = new Funcionario(funcNome);
+		Funcionario funcionario = new Funcionario("João da Silva");
 		this.empresa.cadastrarFuncionarios(funcionario);
 		this.empresa.cadastrarFuncionarios(funcionario);
 	}
