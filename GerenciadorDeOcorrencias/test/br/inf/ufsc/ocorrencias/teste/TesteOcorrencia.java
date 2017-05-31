@@ -45,25 +45,11 @@ public class TesteOcorrencia {
 
 	@Test
 	public void duasOcorrencias() throws Exception {
-
-		TipoOcorrencia tipo2 = TipoOcorrencia.BUG;
-		String resumo2 = "Outro resumo";
 		Funcionario responsavel2 = new Funcionario("Maria da Rosa");
-		Ocorrencia ocorrencia2 = new Ocorrencia(responsavel2, resumo2, tipo2);
+		Ocorrencia ocorrencia2 = new Ocorrencia(responsavel2, "Outro resumo", TipoOcorrencia.BUG);
 
 		assertEquals(1, this.ocorrencia.getChaveUnica());
-		assertEquals(resumo, this.ocorrencia.getResumo());
-		assertEquals(this.responsavelJoao, this.ocorrencia.getResponsavel());
-		assertEquals(null, this.ocorrencia.getPrioridade());
-		assertEquals(EstadoOcorrencia.ABERTA, this.ocorrencia.getEstado());
-		assertEquals(this.tipo, this.ocorrencia.getTipo());
-
 		assertEquals(2, ocorrencia2.getChaveUnica());
-		assertEquals(resumo2, ocorrencia2.getResumo());
-		assertEquals(responsavel2, ocorrencia2.getResponsavel());
-		assertEquals(null, ocorrencia2.getPrioridade());
-		assertEquals(EstadoOcorrencia.ABERTA, ocorrencia2.getEstado());
-		assertEquals(tipo2, ocorrencia2.getTipo());
 	}
 
 	@Test
