@@ -26,11 +26,13 @@ public class UsuarioColumnFixtureTest extends ColumnFixture {
 
 	public boolean verificarUsuarioExiste() {
 		try {
-			this.fachada.getUsuarioPor(this.cpf);
-			return true;
+			if (this.fachada.getUsuarioPor(this.cpf) != null) {
+				return true;
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			return false;
 		}
+		return false;
 	}
+
 }

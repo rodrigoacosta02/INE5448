@@ -14,4 +14,16 @@ public class MercadoActionFixtureTest extends ActionFixture {
 	public Boolean mercadoMontado() {
 		return this.fachada.isMercadoMontado();
 	}
+
+	public void desmontarMercado() {
+		this.fachada.desmontarMercado();
+	}
+
+	public Boolean mercadoDesmontado() {
+		return this.fachada.isMercadoDesmontado();
+	}
+
+	public void limparMercado() {
+		this.fachada.limparMercado();
+	}
 }

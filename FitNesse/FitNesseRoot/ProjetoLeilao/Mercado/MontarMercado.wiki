@@ -6,3 +6,6 @@ Test
 |start|fixtures.MercadoActionFixtureTest|
 |press|montar mercado                   |
 |check|mercado montado       |true      |
+|press|desmontar mercado                   |
+|check|mercado desmontado       |true      |
+|press|limpar mercado                   |

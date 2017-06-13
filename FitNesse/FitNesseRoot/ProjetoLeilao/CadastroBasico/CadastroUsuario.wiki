@@ -6,10 +6,10 @@ Test
 O sistema deve permitir o cadastro de usuários
 
 
-!|fixtures.UsuarioColumnFixtureTest                                                                                                 |
-|nome           |endereço|email            |cpf           |verificar usuario existe()|cadastrar usuario()|verificar usuario existe()|
-|Ernani Cézar   |UFSC    |ernani@asdf.com  |713.541.340-79|                          |true               |true                      |
-|Douglas Hiura  |UFSC    |douglas@asdf.com |547.799.270-05|                          |true               |true                      |
-|Patricia Vilain|UFSC    |patricia@ufsc.com|651.081.890-60|                          |true               |true                      |
-|Patricia Vilain|UFSC    |patricia@ufsc.com|713.541.340-00|                          |false              |false                     |
-|Patricia Vilain|UFSC    |patricia@ufsc.com|651.081.890-60|                          |true               |true                      |
+!|fixtures.UsuarioColumnFixtureTest                                                                                                                         |
+|nome           |endereco            |email                        |cpf           |verificar usuario existe()|cadastrar usuario()|verificar usuario existe()|
+|Ernani Cézar   |Campos Universitario|ernani.santos@posgrad.ufsc,br|327.387.790-18|                          |true               |true                      |
+|Douglas Hiura  |Campos Universitario|douglas.hiura@posgrad.ufsc,br|832.390.518-50|                          |true               |true                      |
+|Patricia Vilain|Campos Universitario|patricia@ufsc.com            |323.667.674-47|                          |true               |true                      |
+|Patricia Vilain|Campos Universitario|patricia@ufsc.com            |323.667.674-00|                          |false              |false                     |
+|Patricia Vilain|Campos Universitario|patricia@ufsc.com            |323.667.674-47|                          |false              |true                      |
