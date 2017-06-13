@@ -1,3 +1,4 @@
+|ProjetoLeilao.CadastroBasico.CadastroProduto||11:33:29 Ter, jun 13, 2017|
 |ProjetoLeilao.CadastroBasico.CadastroUsuario||11:20:10 Ter, jun 13, 2017|
 |ProjetoLeilao.Mercado.MontarMercado||11:16:41 Ter, jun 13, 2017|
 |ProjetoLeilao.CadastroBasico||10:43:20 Ter, jun 13, 2017|
