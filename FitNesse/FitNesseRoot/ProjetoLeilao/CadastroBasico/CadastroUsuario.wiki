@@ -1,0 +1,15 @@
+---
+Test
+---
+<test page>
+
+O sistema deve permitir o cadastro de usuários
+
+
+!|fixtures.UsuarioColumnFixtureTest                                                                                                 |
+|nome           |endereço|email            |cpf           |verificar usuario existe()|cadastrar usuario()|verificar usuario existe()|
+|Ernani Cézar   |UFSC    |ernani@asdf.com  |713.541.340-79|                          |true               |true                      |
+|Douglas Hiura  |UFSC    |douglas@asdf.com |547.799.270-05|                          |true               |true                      |
+|Patricia Vilain|UFSC    |patricia@ufsc.com|651.081.890-60|                          |true               |true                      |
+|Patricia Vilain|UFSC    |patricia@ufsc.com|713.541.340-00|                          |false              |false                     |
+|Patricia Vilain|UFSC    |patricia@ufsc.com|651.081.890-60|                          |true               |true                      |

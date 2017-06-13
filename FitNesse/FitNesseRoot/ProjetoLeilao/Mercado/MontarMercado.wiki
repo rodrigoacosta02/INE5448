@@ -1,0 +1,8 @@
+---
+Test
+---
+<test page>
+!| ActionFixture                        |
+|start|fixtures.MercadoActionFixtureTest|
+|press|montar mercado                   |
+|check|mercado montado       |true      |

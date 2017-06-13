@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.Mercado</rootPath>
+  <pageHistoryReference>
+    <name>ProjetoLeilao.Mercado.MontarMercado</name>
+    <date>2017-06-13T10:21:39-03:00</date>
+    <pageHistoryLink>ProjetoLeilao.Mercado.MontarMercado?pageHistory&amp;resultDate=20170613102139</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>11</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:fitlibrary.suite.FitLibraryServer</testSystem>
+    <command>/usr/lib/jvm/java-8-oracle/bin/java -cp /media/12104064/6559-AC7F/workspace/INE5448/INE5448-Leilao/bin/:/home/100000000243152/Downloads/FitNesse/fitnesse-standalone.jar:/home/100000000243152/Downloads/FitNesse/fitlibrary-2.0.jar:/home/100000000243152/Downloads/FitNesse/log4j-1.2.17.jar fitlibrary.suite.FitLibraryServer ine 44222 3863</command>
+    <exitCode>3</exitCode>
+    <stdOut></stdOut>
+    <stdErr>java.io.FileNotFoundException: arquivoDoMercado (Arquivo ou diretório não encontrado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at modelo.FabricaDeMercado.montar(FabricaDeMercado.java:25)
+	at modelo.FachadaMercadoLeilaoComSerializacao.isMercadoMontado(FachadaMercadoLeilaoComSerializacao.java:136)
+	at fixtures.MercadoActionFixtureTest.mercadoMontado(MercadoActionFixtureTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitlibrary.closure.MethodClosure.invoke(MethodClosure.java:49)
+	at fitlibrary.closure.CalledMethodTarget.invoke(CalledMethodTarget.java:80)
+	at fitlibrary.closure.CalledMethodTarget.invoke(CalledMethodTarget.java:118)
+	at fitlibrary.closure.CalledMethodTarget.invokeAndCheckForSpecial(CalledMethodTarget.java:178)
+	at fitlibrary.traverse.workflow.special.PrefixSpecialAction$1.run(PrefixSpecialAction.java:38)
+	at fitlibrary.traverse.workflow.caller.SpecialCaller.run(SpecialCaller.java:49)
+	at fitlibrary.traverse.workflow.DispatchRowInFlow.pickAndRunValidCaller(DispatchRowInFlow.java:98)
+	at fitlibrary.traverse.workflow.DispatchRowInFlow.interpretRow(DispatchRowInFlow.java:53)
+	at fitlibrary.traverse.workflow.DoTraverse.interpretRowBeforeWrapping(DoTraverse.java:99)
+	at fitlibrary.traverse.workflow.DoTraverse.interpretRow(DoTraverse.java:96)
+	at fitlibrary.flow.DoFlowOnTable.runTable(DoFlowOnTable.java:80)
+	at fitlibrary.flow.DoFlowOnTable.runTable(DoFlowOnTable.java:56)
+	at fitlibrary.flow.DoFlow.runTable(DoFlow.java:104)
+	at fitlibrary.flow.DoFlow.runSingleTable(DoFlow.java:89)
+	at fitlibrary.flow.DoFlowWithExtraTableAddedWhenNeeded.runStorytest(DoFlowWithExtraTableAddedWhenNeeded.java:33)
+	at fitlibrary.suite.BatchFitLibrary.doTables(BatchFitLibrary.java:92)
+	at fitlibrary.suite.BatchFitLibrary.doStorytest(BatchFitLibrary.java:50)
+	at fitlibrary.suite.BatchFitLibrary.doTables(BatchFitLibrary.java:107)
+	at fitlibrary.suite.FitLibraryServer.doTables(FitLibraryServer.java:36)
+	at fitlibrary.suite.FitLibraryServer.doTables(FitLibraryServer.java:28)
+	at fit.FitServerBridge.process(FitServerBridge.java:76)
+	at fit.FitServerBridge.run(FitServerBridge.java:60)
+	at fitlibrary.suite.FitLibraryServer.main(FitLibraryServer.java:54)
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>611</totalRunTimeInMillis>
+</suiteResults>
+

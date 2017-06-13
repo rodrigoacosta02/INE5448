@@ -1,0 +1,12 @@
+---
+Suite
+---
+!1 Test suite Mercado
+!contents -R2 -g -p -f -h
+Conjunto de testes para validar os seguintes requisitos:
+
+R1 - ...
+
+R2 - ...
+
+R3 - ...
