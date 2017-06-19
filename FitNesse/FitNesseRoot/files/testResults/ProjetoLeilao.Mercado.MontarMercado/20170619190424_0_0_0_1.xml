@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.Mercado.MontarMercado</rootPath>
+    <executionLog>
+    <testSystem>fit:fitlibrary.suite.FitLibraryServer</testSystem>
+    <command>java -cp /media/12104064/6559-AC7F/workspace/INE5448/INE5448-Leilao/bin/:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitlibrary-2.0.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/log4j-1.2.17.jar fitlibrary.suite.FitLibraryServer user-W110ER 34240 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr>Erro: Não foi possível localizar nem carregar a classe principal fitlibrary.suite.FitLibraryServer
+</stdErr>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+    <exception>FitClient: external process terminated before a connection could be established.</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1023</totalRunTimeInMillis>
+</testResults>
+

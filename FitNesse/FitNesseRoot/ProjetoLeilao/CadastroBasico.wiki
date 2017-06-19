@@ -1,5 +1,5 @@
 ---
 Suite
 ---
-!1 Cadastro Básico
+!1 Cadastros Básicos
 !contents -R2 -g -p -f -h
