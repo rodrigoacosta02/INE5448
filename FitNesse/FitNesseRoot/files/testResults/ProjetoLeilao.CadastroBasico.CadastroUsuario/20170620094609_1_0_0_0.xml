@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.CadastroBasico.CadastroUsuario</rootPath>
+    <result>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-06-20T09:46:09-03:00</date>
+    <runTimeInMillis>4</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;br/&gt;O sistema deve permitir o cadastro de usuários&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="7"&gt;fixtures.UsuarioColumnFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;nome&lt;/td&gt;
+		&lt;td&gt;endereco&lt;/td&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;cpf&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe()&lt;/td&gt;
+		&lt;td&gt;cadastrar usuario()&lt;/td&gt;
+		&lt;td&gt;verificar usuario existe()&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Ernani Cézar&lt;/td&gt;
+		&lt;td&gt;Campos Universitario&lt;/td&gt;
+		&lt;td&gt;ernani.santos@posgrad.ufsc,br&lt;/td&gt;
+		&lt;td&gt;327.387.790-18&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Douglas Hiura&lt;/td&gt;
+		&lt;td&gt;Campos Universitario&lt;/td&gt;
+		&lt;td&gt;douglas.hiura@posgrad.ufsc,br&lt;/td&gt;
+		&lt;td&gt;832.390.518-50&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;Campos Universitario&lt;/td&gt;
+		&lt;td&gt;patricia@ufsc.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-47&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;Campos Universitario&lt;/td&gt;
+		&lt;td&gt;patricia@ufsc.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-00&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;false&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Patricia Vilain&lt;/td&gt;
+		&lt;td&gt;Campos Universitario&lt;/td&gt;
+		&lt;td&gt;patricia@ufsc.com&lt;/td&gt;
+		&lt;td&gt;323.667.674-47&lt;/td&gt;
+		&lt;td&gt; &lt;span class="fit_grey"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="pass"&gt;false&lt;/td&gt;
+		&lt;td class="pass"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CadastroUsuario</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/usr/lib/jvm/java-8-oracle/bin/java -cp /media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/12104064/6559-AC7F/workspace/INE5448/INE5448-Leilao/bin/:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitlibrary-2.0.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/log4j-1.2.17.jar fit.FitServer ine 40710 3863</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>571</totalRunTimeInMillis>
+</testResults>
+

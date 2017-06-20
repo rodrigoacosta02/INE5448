@@ -1,11 +1,8 @@
 package fixtures;
 
 import java.text.SimpleDateFormat;
-import java.util.List;
-
 import fit.ColumnFixture;
 import modelo.FachadaMercadoLeilaoComSerializacao;
-import modelo.Produto;
 
 public class ProdutoColumnFixtureTest extends ColumnFixture {
 	private String nome;
@@ -30,18 +27,7 @@ public class ProdutoColumnFixtureTest extends ColumnFixture {
 		}
 	}
 
-	@SuppressWarnings("unchecked")
 	public boolean verificarProdutoExiste() {
-		try {
-			List<Produto> produtosEmLeilao = (List<Produto>) this.fachada.getProdutosEmLeilao();
-			for (Produto produto : produtosEmLeilao) {
-				if (produto.nome().equals(this.nome)) {
-					return true;
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return false;
+		return this.fachada.verificaSeOProdutoJaExiste(this.nome);
 	}
 }

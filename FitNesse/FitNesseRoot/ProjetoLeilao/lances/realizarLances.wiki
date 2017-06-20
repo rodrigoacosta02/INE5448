@@ -6,8 +6,8 @@ Test
 O sistema deve validar os lances
 
 
-!|fixtures.ValidacaoDeLances                                             |
-|nomeProduto|cpfComprador  |valorLance|realizar Lance()|realizar Lance()|
-|casa       |327.387.790-18|1000.0      |                 |true            |
-|casa       |832.390.518-50|1500.0      |                 |true            |
-|casa       |323.667.674-47|1800.0      |                 |true            |
+!|fixtures.ValidacaoDeLances                                                                               |
+|nomeProduto|cpfComprador  |valorLance|verificar lance usuario()|realizar lance()|verificar lance usuario()|
+|casa       |327.387.790-18|1000      |                         |false           |false                    |
+|casa       |832.390.518-50|1500      |                         |true            |true                     |
+|casa       |832.390.518-50|1800      |                         |true            |true                     |

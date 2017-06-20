@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.CadastroBasico</rootPath>
+  <pageHistoryReference>
+    <name>ProjetoLeilao.CadastroBasico.CadastroProduto</name>
+    <date>2017-06-20T09:47:03-03:00</date>
+    <pageHistoryLink>ProjetoLeilao.CadastroBasico.CadastroProduto?pageHistory&amp;resultDate=20170620094703</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>ProjetoLeilao.CadastroBasico.CadastroUsuario</name>
+    <date>2017-06-20T09:47:03-03:00</date>
+    <pageHistoryLink>ProjetoLeilao.CadastroBasico.CadastroUsuario?pageHistory&amp;resultDate=20170620094703</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>2</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/usr/lib/jvm/java-8-oracle/bin/java -cp /media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/12104064/6559-AC7F/workspace/INE5448/INE5448-Leilao/bin/:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitlibrary-2.0.jar:/media/12104064/6559-AC7F/workspace/INE5448/FitNesse/log4j-1.2.17.jar fit.FitServer ine 45658 3863</command>
+    <exitCode>5</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>2</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>629</totalRunTimeInMillis>
+</suiteResults>
+

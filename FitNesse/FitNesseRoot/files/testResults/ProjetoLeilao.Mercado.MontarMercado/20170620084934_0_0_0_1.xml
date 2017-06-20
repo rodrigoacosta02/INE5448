@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ProjetoLeilao.Mercado.MontarMercado</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <date>2017-06-20T08:49:34-03:00</date>
+    <runTimeInMillis>31</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt; ActionFixture&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;start&lt;hr/&gt; &lt;span class="fit_label"&gt;Could not find fixture: fixtures.MercadoActionFixtureTest.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;fixtures.MercadoActionFixtureTest&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;press&lt;hr/&gt; &lt;span class="fit_label"&gt;You must start a fixture using the 'start' keyword.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;montar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;check&lt;hr/&gt; &lt;span class="fit_label"&gt;You must start a fixture using the 'start' keyword.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;mercado montado&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;press&lt;hr/&gt; &lt;span class="fit_label"&gt;You must start a fixture using the 'start' keyword.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;desmontar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;check&lt;hr/&gt; &lt;span class="fit_label"&gt;You must start a fixture using the 'start' keyword.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;mercado desmontado&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td class="error"&gt;press&lt;hr/&gt; &lt;span class="fit_label"&gt;You must start a fixture using the 'start' keyword.&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="2"&gt;limpar mercado&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>MontarMercado</relativePageName>
+          </result>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/usr/lib/jvm/java-8-oracle/bin/java -cp /media/12104064/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/user/6559-AC7F/workspace/INE5448/INE5448-Leilao/bin/:/media/user/6559-AC7F/workspace/INE5448/FitNesse/fitnesse-standalone.jar:/media/user/6559-AC7F/workspace/INE5448/FitNesse/fitlibrary-2.0.jar:/media/user/6559-AC7F/workspace/INE5448/FitNesse/log4j-1.2.17.jar fit.FitServer ine 43512 3863</command>
+    <exitCode>6</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>632</totalRunTimeInMillis>
+</testResults>
+

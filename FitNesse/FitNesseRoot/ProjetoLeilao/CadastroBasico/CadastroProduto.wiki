@@ -10,7 +10,7 @@ O sistema deve permitir o cadastro de produtos
 |nome |descricao          |dataLimite|cpfLeiloador  |lanceMinimo|verificar produto existe()|cadastrar produto()|verificar produto existe()|
 |carro|Carro A            |2017-06-06|327.387.790-18|1000.0       |                          |true               |true                      |
 |casa |Casa A             |2017-06-06|832.390.518-50|1500.0       |                          |true               |true                      |
-|carro|Carro B            |2017-06-06|323.667.674-47|1822.0       |                          |false              |false                     |
+|carro|Carro B            |2017-06-06|323.667.674-47|1822.0       |                          |false              |true                     |
 |fruta|Fruta A sem usuario|2017-06-06|113.533.184-78|1822.0       |                          |false              |false                     |
 
 
