@@ -1,12 +1,12 @@
-#Author: ernani.santos@posgrad.ufsc.br
-Feature: Cadastrar Usuario
-  Cadastrar usuarios
+Feature: Cadastrar Produto
+  Cadastrar produtos
 
-  @CadastrarUsuarioSucesso
-  Scenario: Cadastrar Usuario com Sucesso
-    Given O nome de usuario "Ernani Cesar"
-    And o enderco "Campus Universitario"
-    And e o CPF "055.761.919-00"
-    And e o e-mail "ernani.santos@posgrad.ufsc.br"
-    When O usuario nao existir anteriormente
-    Then O sistema deve cadastrar o usuario com sucesso
+  @CadastrarProdutoSucesso
+  Scenario: Cadastrar Produto com Sucesso
+    Given O nome do produto "carro"
+    And a descricao "Carro A"
+    And e a data limite "2017-06-06"
+    And e o cpf leiloador "327.387.790-18"
+    And e o lance minimo "1000"
+    When O produto nao existir anteriormente
+    Then O sistema deve cadastrar o produto com sucesso
