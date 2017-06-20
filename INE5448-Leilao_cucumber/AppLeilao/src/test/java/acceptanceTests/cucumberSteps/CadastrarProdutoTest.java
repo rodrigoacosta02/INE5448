@@ -32,6 +32,7 @@ public class CadastrarProdutoTest {
 	public void setup() throws Exception {
 		this.fachada.limparMercado();
 		this.fachada.cadastrarUsuario("Nome", "Descricao", "asdf@asdf.com", "327.387.790-18");
+		this.fachada.cadastrarProduto("carro B", "Descr 1", 500.0, "327.387.790-18", new Date());
 	}
 
 	@After
@@ -69,24 +70,10 @@ public class CadastrarProdutoTest {
 		this.lanceMinimo = Double.valueOf(arg1);
 	}
 
-	@When("^O produto nao existir anteriormente$")
-	public void o_produto_nao_existir_anteriormente() {
-		try {
-			if (this.fachada.verificaSeOProdutoJaExiste(this.nome)) {
-				// System.out.println("Produto encontrado");
-				this.expectedResult = false;
-			} else {
-				// System.out.println("Produto nao encontrado");
-				this.expectedResult = true;
-			}
-		} catch (Exception e) {
-			this.expectedResult = true;
-			// e.printStackTrace();
-		}
-	}
+	@When("^o produto cadastrado com \"([^\"]*)\"$")
+	public void o_produto_cadastrado_com(String arg1) {
+		boolean expectedResult = Boolean.parseBoolean(arg1);
 
-	@Then("^O sistema deve cadastrar o produto com sucesso$")
-	public void o_sistema_deve_cadastrar_o_produto_com_sucesso() {
 		Boolean cadastro = false;
 		try {
 			this.fachada.cadastrarProduto(this.nome, this.descricao, this.lanceMinimo, this.cpfLeiloador,
@@ -96,7 +83,15 @@ public class CadastrarProdutoTest {
 			e.printStackTrace();
 		}
 
-		Assert.assertEquals(this.expectedResult, cadastro);
+		Assert.assertEquals(expectedResult, cadastro);
+	}
+
+	@Then("^o produto deve \"([^\"]*)\"$")
+	public void o_produto_deve(String arg1) {
+		boolean expectedResult = Boolean.parseBoolean(arg1);
+		Boolean produtoExiste = this.fachada.verificaSeOProdutoJaExiste(this.nome);
+
+		Assert.assertEquals(expectedResult, produtoExiste);
 
 	}
 }
